@@ -1,1 +1,1 @@
-# personalporfolio
+# This is my personal portfolio and can be found at www.meeteddie.tech
