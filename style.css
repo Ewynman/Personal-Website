@@ -586,11 +586,8 @@ section .title::after {
 .right form .button-area button:hover {
   color: crimson;
   background: none;
-<<<<<<< HEAD
 }
 
 .fa-twitter, .fa-github, .fa-linkedin {
   color: white;
-=======
->>>>>>> ed64dcf3cfdf4901ac8325e748befec9a1b47db9
 }
