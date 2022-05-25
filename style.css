@@ -594,3 +594,7 @@ section .title::after {
   color: #AC5FDB;
   background: none;
 }
+
+.fa-twitter, .fa-github, .fa-linkedin {
+  color: white;
+}
