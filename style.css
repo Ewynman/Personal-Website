@@ -3,6 +3,9 @@
     padding: 3em 0;
   }
 
+  @media screen and (max-width: 600px) {
+    .column-left {display:none;}
+}
   .masthead-heading {
     font-size: 3em;
   }
@@ -291,7 +294,7 @@ section .title::after {
   width: 45%;
 }
 
-.about .about-content .left img {
+.about .about-content .column-left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
