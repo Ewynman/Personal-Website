@@ -130,6 +130,10 @@ section .title::after {
 }
 
 /* navbar styling */
+.nav-link{
+  color: #fff;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -428,15 +432,24 @@ section .title::after {
 
 
 /* services section styling */
+.contact{
+  background-color: #1E2029;
+}
+
+.title, .head, .text{
+  color:#fff
+}
+
 .services,
 .teams {
   color: #fff;
-  background: #111;
+  background-color: #1E2029;
 }
 
 .services .title::before,
 .teams .title::before {
-  background: #fff;
+  background-color: #1E2029;
+  color: #ffff;  
 }
 
 .services .title::after,
@@ -514,6 +527,7 @@ section .title::after {
 
 .contact .contact-content .row .info {
   margin-left: 30px;
+  background-color: #1E2029;
 }
 
 .contact .contact-content .row i {
@@ -523,14 +537,17 @@ section .title::after {
 
 .contact .contact-content .info .head {
   font-weight: 500;
+
 }
 
 .contact .contact-content .info .sub-title {
-  color: #333;
+  color: #fff;
+  background-color: #1E2029;
 }
 
 .contact .right form .fields {
   display: flex;
+  background-color: #1E2029;
 }
 
 .contact .right form .field,
@@ -538,15 +555,18 @@ section .title::after {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
+  background-color: #1E2029;
 }
 
 .contact .right form .textarea {
   height: 80px;
   width: 100%;
+  background-color: #1E2029;
 }
 
 .contact .right form .name {
   margin-right: 10px;
+  background-color: #1E2029;
 }
 
 .contact .right form .field input,
@@ -560,21 +580,25 @@ section .title::after {
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease;
+  background-color: #1E2029;
 }
 
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
   border-color: #b3b3b3;
+  background-color: #1E2029;
 }
 
 .contact .right form .textarea textarea {
   padding-top: 10px;
   resize: none;
+  background-color: #1E2029;
 }
 
 .contact .right form .button-area {
   display: flex;
   align-items: center;
+  background-color: #1E2029;
 }
 
 .right form .button-area button {
