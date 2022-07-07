@@ -232,7 +232,7 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("./SL-092920-35840-10.jpg");
+  background: url("/Files/SL-092920-35840-10.jpg");
   height: 90vh;
   color: #fff;
   min-height: 90vh;
@@ -291,7 +291,7 @@ section .title::after {
 
 /* about section styling */
 .about .title::after {
-  content: "who i am";
+  content: "who I am";
 }
 
 .about .about-content .left {
