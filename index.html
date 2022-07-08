@@ -31,6 +31,16 @@
   <link rel="icon" type="image/x-icon" href="Files/PFP.jpg">
 </head>
 <nav class="navbar navbar-expand-lg navbar-light">
+  <script>
+    var navbar = document.getElementById(".navbarNav");
+      function hideShow() {
+        if (navbar.style.display == "block") {
+          navbar.style.display = "hideShow()";
+        } else {
+          navbar.style.display = "block";
+        }
+      }
+  </script>
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Edward Wynman</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -63,16 +73,6 @@
 </nav>
 
 <body>
-  <script>
-    var navbar = document.getElementById(".navbarNav");
-      function hideShow() {
-        if (navbar.style.display == "block") {
-          navbar.style.display = "hideShow()";
-        } else {
-          navbar.style.display = "block";
-        }
-      }
-  </script>
   <section class="home">
     <div class="jumbotron text-center">
       <section class="home" id="home">
@@ -86,13 +86,13 @@
                   $(document).ready(function () {
                     // typing text animation script
                     var typed = new Typed(".typing", {
-                      strings: ["Student", "Developer", "Designer"],
+                      strings: ["Student", "Developer", "Engineer"],
                       typeSpeed: 100,
                       backSpeed: 60,
                       loop: true
                     });
                     var typed = new Typed(".typing-2", {
-                      strings: ["Student", "Developer", "Designer"],
+                      strings: ["Student", "Developer", "Engineer"],
                       typeSpeed: 100,
                       backSpeed: 60,
                       loop: true
