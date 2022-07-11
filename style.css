@@ -641,3 +641,7 @@ section .title::after {
 .navbar-toggler-icon {
   color: #ac5fdb;
 }
+
+.about, .skills{
+  background-color: #1e2029;
+}
