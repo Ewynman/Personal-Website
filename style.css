@@ -626,3 +626,7 @@ section .title::after {
 .fa-twitter, .fa-github, .fa-linkedin {
   color: white;
 }
+
+.navbar-toggler-icon{
+  color:#AC5FDB
+}
