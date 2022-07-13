@@ -21,6 +21,8 @@
     padding: 2em 2.5em;
   }
 }
+
+
 .about,
 .about-content,
 .skills,
@@ -644,4 +646,16 @@ section .title::after {
 
 .about, .skills{
   background-color: #1e2029;
+}
+
+@media (max-width: 991px) {
+
+  .services .max-width {
+     padding: 0;   
+   }
+  .services .serv-content,
+  .services .serv-content .card {
+     width: 100%; 
+  }
+  
 }
