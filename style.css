@@ -245,7 +245,7 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("/Files/SL-092920-35840-10.jpg");
+  background: url("/Files/banner.jpg");
   height: 90vh;
   color: #fff;
   min-height: 90vh;
