@@ -659,3 +659,14 @@ section .title::after {
   }
   
 }
+
+@media only screen and (max-width: 1000px) {
+    .about .about-content .right {
+        width: 100%;
+    }
+  
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
