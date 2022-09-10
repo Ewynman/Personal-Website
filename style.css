@@ -321,7 +321,7 @@ section .title::after {
   width: 55%;
 }
 
-.about .about-content .right .text {
+.about .about-content .right .text .text-2{
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -348,7 +348,54 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover {
+.experience .about .about-content .right a:hover {
+  color: #ac5fdb;
+  background: none;
+}
+/* Experience Styling */
+.experience .exp-content .left {
+  width: 45%;
+}
+
+.experience .exp-content .column-left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.experience .exp-content .right {
+  width: 55%;
+}
+
+.experience .exp-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.experience .exp-content .right .text span {
+  color: #ac5fdb;
+}
+
+.experience .exp-content .right p {
+  text-align: justify;
+}
+
+.experience .exp-content .right a {
+  display: inline-block;
+  background: #ac5fdb;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #ac5fdb;
+  transition: all 0.3s ease;
+}
+
+.experience .exp-content .right a:hover {
   color: #ac5fdb;
   background: none;
 }
