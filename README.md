@@ -1,6 +1,6 @@
 This is my personal website
 
-Made with:<br>
+<h3>Made with:</h3><br>
     - HTML<br>
     - CSS<br>
     - JavaScript<br>
