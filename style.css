@@ -150,6 +150,7 @@ input[type="checkbox"] {
 .container3 {
     padding-top: 5px;
     padding-left: 50px;
+    width: 100%;
     background-color: #fcf8ee;
 }
 
