@@ -1,14 +1,11 @@
-This is my personal website
+# My Personal Website
 
-<h3>Made with:</h3><br>
-    - HTML<br>
-    - CSS<br>
-    - JavaScript<br>
 
-This website consiste all of my infomation and projects
-that I have worked on. It also contins my Resume and
-skills.
 
-View the website here:
+## About <a name = "about"></a>
 
-<h1>https://www.meeteddie.tech/<h1>
+This is a webiste I perosnally develped to display my skills, work experience, projects, and other things I am apart of. 
+I used a combination of HTML, CSS, and JavaScript to build this website, then later deployed it using GitHub Pages
+
+### Viewing
+Visit [http://www.meeteddie.tech/](http://www.meeteddie.tech/) to view the website
