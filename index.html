@@ -1,293 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./Files/pfp.jpg" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/3263ba6030.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/3263ba6030.js" crossorigin="anonymous"></script>
-    <title>Hi I'm Eddie</title>
-</head>
-<nav class="navbar">
-    <!-- LOGO -->
-    <div class="logo">
-        <a class="nav-link js-scroll-trigger" href="#page-top" style="color: #8982c3">Edward Wynman</a>
+    <title>Hi, Im Eddie</title>
+    <!-- Import Tab Icon -->
+    <link rel="shortcut icon" href="./Files/Imgs/pfp.jpg" type="image/x-icon" />
+    <!-- Import CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style2.css" />
+    <!-- Import Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a81ddc8f81.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="p-4 justify-content-center">
+    <div class="container">
+      <br />
+      <span
+        ><a
+          href="./Files/Edward-Wynman-Resume.pdf"
+          target="_blank"
+          class="link underline"
+          style="text-decoration: none"
+          >resume</a
+        ></span
+      >
+      <br />
+      <span
+        ><a
+          href="edward.wynman@gmail.com"
+          target="_blank"
+          class="link underline"
+          style="text-decoration: none"
+          >contact me</a
+        ></span
+      >
+      <br />
+      <div class="experience_card"></div>
+      <div class="container heading pt-4">
+        <h2 class="main-head">Web and Moible Dev</h2>
+        <div>
+          <i class="fas fa-map-marker-alt" style="color: #a14444"></i>
+          <span class="ml-2">Bogota, NJ</span>
+        </div>
+        <p class="subheading mt-2">
+          Software Developer and an incoming ERCT Intern at
+          <a
+            href="https://www.zebra.com/us/en.html/"
+            style="color: #fff"
+            target="_blank"
+            class="link underline"
+            >Zebra Technologies</a
+          >. Currently atteneding
+          <a
+            href="https://www.montclair.edu/"
+            style="color: #a14444"
+            target="_blank"
+            class="link underline"
+            >MSU</a
+          >, where I studied Computer Science.
+        </p>
+      </div>
+      <div class="container">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/edward-wynman/"
+            target="_blank"
+            class="link mr-3"
+            ><i class="fab fa-linkedin"></i>&nbsp LinkedIn</a
+          >
+          <a href="#" target="_blank" class="link mr-3"
+            ><i class="fab fa-twitter"></i>&nbsp Twitter</a
+          >
+          <a href="https://github.com/Ewynman" target="_blank" class="link mr-3"
+            ><i class="fab fa-github"></i>&nbsp Github</a
+          >
+        </div>
+      </div>
     </div>
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#work">Work Experience</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#activities">Activities</a></li>
-            <li class="nav-item"><a href="./Files/Edward-Wynman-Resume.pdf" onclick="scrollToHome()">Resume</a></li>
-            <button class="lgtdarkbttn" id="mode-toggle-btn">Toggle Mode</button>
-        </div>
-    </ul>
-</nav>
 
-<body>
-    <!-- Special div for adding a preset even amout of space -->
-    <div class="space"></div>
+    <section class="timeline">
+      <div class="container">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
 
-    <!-- Main Landed Section -->
-    <section class="container1" id="page-top" style="background-image: url('./Files/svg.png');">
-        <div class="left-text">
-            <div class="hi">
-                <p>Hello</p>
-            </div>
-            <div class="name">
-                <p>I'm Edward</p>
-                <p style="font-size: 25px;">
-                    I'm a aspiring Software Engineeir with intrest
-                    in web and mobile developemnt
-                </p>
-            </div>
+          <div class="timeline-content js--fadeInLeft">
+            <h6 class="title-tl">Computer Club President @ MSU</h6>
+            <div class="date">Jan 22' - Present</div>
+            <blockquote>
+              Gave various tech workshops, including Making Twitter Bots with
+              the Twitter API with Python, Making Pong with Python, How to
+              Develop & Deploy website, and many more.
+            </blockquote>
+          </div>
         </div>
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <h6 class="title-tl">
+              Research Intern @ NASA Space Grant <br />Consorium
+            </h6>
+            <div class="date">Sept 22' - May 23'</div>
+            <blockquote>
+              Worked on the development of a processing workflow for
+              hyperspectral images allowing users to search the USGS database
+              and analyze the images.
+            </blockquote>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <div class="date">May 22' - May 23'</div>
+            <h2 class="title-tl">Hackathon Director</h2>
+            <blockquote>
+              Lead developer for the hackathon's website, managing product
+              design, reaching out to schools and professionals in the industry,
+              creating flyers, and posting about the event on social media.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <h6 class="title-tl">ShuttleBus</h6>
+            <div class="date">Jan 23' - May 23'</div>
+            <blockquote>
+              Developed a CRUDE based Shuttle Mangement System in a group of 4
+              using HTML, CSS, PHP, and JavaScript with a MySQL Backend.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <div class="date">Dec 22'</div>
+            <h2 class="title-tl">Workout Buddy</h2>
+            <blockquote>
+              I developed a MERN workout application to track a user's specific
+              workouts and progress.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <h6 class="title-tl">
+              Software Sngineer Intern <br />
+              @ ISC Industries
+            </h6>
+            <div class="date">Jan 23' - May 23'</div>
+            <blockquote>
+              I was part of the Catalog team and developed in-house software for
+              analyzing, moving, and adding images to the company database.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- End Timeline container -->
+      </div>
     </section>
+    <div class="space" style="margin-bottom: 100px;"></div>
+    <div class="container text-center">
+      <a href="mailto:edward.wynman@gmail.com" class="link"
+        >edward.wynman@gmail.com</a
+      >
+    </div>
+  </body>
 
-    <div class="space"></div>
-
-    <!-- Work Experience Section -->
-    <section class="container2" id="work">
-        <div class="title">
-            <p>Work Experience</p>
-        </div>
-        <!-- First Job -->
-        <div class="job-card">
-            <div class="jobtitle">
-                <p>NASA New Jersey Space Grant Consortium<br>Sept 2022 - Present</p>
-            </div>
-            <div class="jobdes">
-                <p>
-                    I investigated the development of data access and processing workflows for hyperspectral images and
-                    utilized Python libraries such as Spectral Python and SQLite to access and process data within the 
-                    application, allowing users to efficiently analyze and interpret the data. The application also 
-                    includes a progress bar that displays the status of file downloads and other tasks within the 
-                    application, ensuring smooth and efficient usage. I also developed a graphical user interface using 
-                    PyQt5 for a hyperspectral software application that allows users to access, analyze, and visualize
-                    data from various sources, including the USGS database.
-                </p>
-            </div>
-        </div>
-
-        <!-- Second Job -->
-        <div class="job-card">
-            <div class="jobtitle">
-                <p>Software Engineeir Intern,ISC Indusctries<br>June 2022 - August 2022</p>
-            </div>
-            <div class="jobdes">
-                <p>
-                    Utilized Python to develop scripts for data analysis and movement within the company database, and I
-                    created Python scripts to automate the transfer of files and directories for new items in the database. 
-                    I also collaborated with SQL to create queries for storing company data, enabling efficient access and 
-                    retrieval through Python scripts for customer use.
-                </p>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <div class="space"></div>
-
-    <!-- Projects Section -->
-    <section class="container3" id="projects">
-        <div class="projtitle">
-            <p>My Projects</p>
-        </div>
-        <!-- First Project -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>T&J Apparel: E-Commerce Website</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Created a CRUDE online ecommerce website in a group of two using PHP, HTML, CSS, JavaScript, and
-                    MySQL. Implemented both User, Seller, and Admin capabilities. Users can browse and purchase products 
-                    and view past orders. Sellers can view their sales and post products to sell. Admins can search, 
-                    modify, and delete user records.
-                </p>
-                <button class="view"><a href="https://github.com/Ewynman/T-JApprel">View Here</a></button>
-            </div>
-        </div>
-
-        <!-- Second Project -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>Positive Quotes Website</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Sometimes you just need a positive quote, so I used HTML, CSS, and JavaScript to display a bunch of 
-                    positive quotes on the screen one at a time, I have future plans to develop it into something more. 
-                </p>
-                <button class="view"><a href="https://positivitequotes.netlify.app/">View Here</a></button>
-            </div>
-        </div>
-
-        <!-- Third Project -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>Personal Website</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Utilized a strong understanding of HTML, CSS, JavaScript, and JQuery to create a professional and effective 
-                    personal portfolio. Displays projects, work experience, social links, and contact information. 
-                </p>
-                <button class="view"><a href="http://www.meeteddie.tech/">View Here</a></button>
-            </div>
-        </div>
-
-        <!-- Fourth Project -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>Node.JS Blog</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Used Node.js and MongoDB to create a blog website with user ability to post and view blogs with
-                    custom error pages and redirects. Use ejs and JavaScript to display each page and it's contents.
-                </p>
-                <!-- <button class="view"><a href="">View Here</a></button> -->
-            </div>
-        </div>
-
-        <!-- Fifth Project -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>MSU Computer Club Website</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Developed & Deployed MSUCC's website to be maintainable and user-friendly using HTML, CSS,
-                    JavaScript and JQuery. Displays the current schedule and photos for the club as well as 
-                    basic contact information.
-                </p>
-                <button class="view"><a href="https://msucomputerclub.github.io/">View Here</a></button>
-            </div>
-        </div>
-
-        <!-- Sixth Project -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>Mets Quiz Game</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Used HTML, CSS, and JavaScript along with MySQL to develop a New York Mets quiz game with
-                    mutiple choice answers and user feedback upon the submission of the quiz.
-                </p>
-                <button class="view"><a href="https://github.com/Ewynman/mets-quiz-game">View Here</a></button>
-            </div>
-        </div>
-
-        <!-- Seventh Project -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>React Native Todo App</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Created a simple Todo app using React Native. Used vairous JavaScript functions 
-                    along with the react framework. Used state to locally store the todo items so a
-                    user can add, view, and remove their items on their todo list.
-                </p>
-                <button class="view"><a href="https://github.com/Ewynman/TodoReactNative">View Here</a></button>
-            </div>
-        </div>
-    </section>
-
-    <div class="space"></div>
-
-    <!-- Clubs and Activties -->
-    <section class="container3" id="activities">
-        <div class="projtitle">
-            <p>My Activties</p>
-        </div>
-
-        <!-- Frist Club -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>MSU HawkHack - Web Developer & Co-Director<br>Sept 2022 - Present</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Responsible for developing the 2023 HawkHack website as well as coordinate with various
-                    teams to set up the event space and methods used to reach out.
-                </p>
-            </div>
-        </div>
-
-        <!-- Second Club -->
-        <div class="project-card">
-            <div class="ProjectTtle">
-                <p>MSU Computer Club - President <br>June 2022 - Present</p>
-            </div>
-            <div class="projdes">
-                <p>
-                    Responsible for programming events for 150+ members. I spearhead all meetings and have held several
-                    tech workshops some of which include Making Twitter Bots with the Twitter API with Python, Making Pong 
-                    with Python, How to Develop & Deploy website, and many more.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container4">
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#work">Work Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#activities">Activities</a></li>
-                    <li class="nav-item"><a href="./files/Edward-Wynman-Resume.pdf" onclick="scrollToHome()">Resume</a>
-                    </li>
-                </div>
-            </ul>
-            <button class="view"><a href="mailto:edward.wynman@gmail.com">Email Me</a></button><Br><br>
-            <section class="footer-text">
-                <strong style="color: #8982C3; margin-left: 190px;">Say hi to me on these social networks:</strong>
-            </section>
-            <ul class="social" style=" margin-left: 220px;">
-                <a href="https://twitter.com/EddieWynman?lang=en" target="_blank"><i
-                        class="fab fa-twitter fa-2x mr-3"></i></a>
-                <a href="https://github.com/Ewynman" target="_blank"><i class="fab fa-github fa-2x mr-3"></i></a>
-                <a href="https://www.linkedin.com/in/edward-wynman/" target="_blank"><i
-                        class="fab fa-linkedin fa-2x mr-3"></i></a>
-            </ul>
-        </div>
-    <footer>
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="scripts.js"></script>
-</body>
-
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
 </html>
