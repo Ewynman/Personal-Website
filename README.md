@@ -10,4 +10,4 @@ This is a webiste I perosnally develped to display my skills, work experience, p
 I used a combination of HTML, CSS, and JavaScript to build this website, then later deployed it using GitHub Pages
 
 ### Viewing
-[http://www.meeteddie.tech/](http://www.meeteddie.tech/)
+[http://meeteddie.tech/](http://meeteddie.tech/)
