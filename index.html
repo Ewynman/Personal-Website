@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
+
     <!-- Other Imports -->
-    <script src="https://kit.fontawesome.com/3263ba6030.js" crossorigin="anonymous"-></script>
+    <script
+      src="https://kit.fontawesome.com/3263ba6030.js"
+      crossorigin="anonymous"
+      -
+    ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--  CSS & Bootstrap -->
@@ -54,7 +58,9 @@
               <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Files/Edward-Wynman-Resume.pdf">Resume</a>
+              <a class="nav-link" href="./Files/Edward-Wynman-Resume.pdf"
+                >Resume</a
+              >
             </li>
           </ul>
         </div>
@@ -270,11 +276,12 @@
               <i class="fa fa-gift" aria-hidden="true"></i>
               <div class="Stext">T&J Apprel</div>
               <p>
-                Developed an E-commerce website to sell Tom & jerry merchendice
-                using HTML, CSS, PHP, JavaScript, and NoSQL. Created four user
-                groups where customers can buy iterms, sellers can post new
-                items for their shop, Employees can add new sellers, Admins can
-                manage all products and users.
+                Ddeveloped an E-commerce website to sell Tom & jerry merchandise
+                using HTML, CSS, PHP, JavaScript, and a MySQL database. Created
+                four user groups where customers can view and buy orders and
+                view all past orders, sellers can post new items to sell for
+                their shop, Employees can add new sellers and users as well as
+                manage products, Admins can manage all products and all users
               </p>
               <a href="https://github.com/Ewynman/T-JApprel">View</a>
             </div>
@@ -351,12 +358,23 @@
 
       navLinks.forEach((link) => {
         link.addEventListener("click", function (event) {
+          const targetHref = this.getAttribute("href");
+
+          // Check if the link points to a file (e.g., PDF)
+          const isFileLink = targetHref.endsWith(".pdf"); // Adjust the file extension as needed
+
+          if (isFileLink) {
+            // If it's a file link, navigate to the file directly
+            return; // The default behavior of the link will handle the file download
+          }
+
           event.preventDefault();
 
-          const targetSectionId = this.getAttribute("href");
-          const targetSection = document.querySelector(targetSectionId);
+          const targetSection = document.querySelector(targetHref);
 
-          targetSection.scrollIntoView({ behavior: "smooth" });
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+          }
         });
       });
     </script>
