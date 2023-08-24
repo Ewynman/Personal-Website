@@ -378,6 +378,9 @@ blockquote {
 }
 
 @media screen and (max-width: 768px) {
+  .timeline .title{
+    font-size: 25px;
+  }
   .timeline::before {
     left: 50px;
   }
@@ -561,6 +564,7 @@ blockquote {
 
 /* For screens with a maximum width of 768px */
 @media only screen and (max-width: 768px) {
+  
   section {
     padding: 50px 0;
   }
