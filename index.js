@@ -1,4 +1,5 @@
 $(function () {
+  // 
   window.sr = ScrollReveal();
 
   if ($(window).width() < 768) {
