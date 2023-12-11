@@ -163,13 +163,20 @@ section .title::after {
 
 .navbar.sticky .menu li a:hover {
   color: #ffff;
+  background-color: #ac5fdb;
+}
+
+.navbar-nav{
+  background-color: #ac5fdb;
+  width: 100%;
+  color: #fff;
 }
 
 /* home section styling */
 .home {
   display: flex;
   background-color: #1e2029;
-  height: 50vh;
+  height: 30vh;
   color: #fff;
   background-size: cover;
   background-attachment: fixed;
@@ -236,7 +243,7 @@ header p {
   color: rgba(255, 255, 255, 0.2);
   margin-bottom: 0;
   font-size: 60px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .timeline {
@@ -436,6 +443,7 @@ blockquote {
   transition: all 0.3s ease;
 }
 
+
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
@@ -514,19 +522,19 @@ blockquote {
 }
 
 .skills-content .right .css::before {
-  width: 90%;
+  width: 95%;
 }
 
 .skills-content .right .js::before {
-  width: 75%;
+  width: 90%;
 }
 
 .skills-content .right .php::before {
-  width: 70%;
+  width: 85%;
 }
 
 .skills-content .right .mysql::before {
-  width: 50%;
+  width: 80%;
 }
 
 /* Footer Style */

@@ -8,6 +8,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
     <!-- Other Imports -->
     <script
       src="https://kit.fontawesome.com/3263ba6030.js"
@@ -71,20 +78,21 @@
       <div class="max-width">
         <div class="home-content">
           <div class="container heading pt-4">
-            <h2 class="main-head">Web & Mobile Dev</h2>
+            <h1 class="main-head">Web & Mobile Dev</h1>
             <div>
               <i class="fas fa-map-marker-alt" style="color: #a14444"></i>
               <span class="ml-2">Bogota, NJ</span>
             </div>
             <p class="subheading mt-2">
-              ECRT Software Engineer Intern at
+              <!--ECRT Software Engineer Intern at
               <a
                 href="https://www.zebra.com/us/en.html/"
                 style="color: #fff"
                 target="_blank"
                 class="link underline"
                 >Zebra Technologies</a
-              >. Currently attending
+              >.-->
+              Currently attending
               <a
                 href="https://www.montclair.edu/"
                 style="color: #a14444"
@@ -127,25 +135,12 @@
         <section class="timeline" style="background-color: #1e2029">
           <div class="container">
             <!-- Item 1 -->
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInLeft">
-                <div class="date">Dec 2023</div>
-                <h3>B.S. Computer Science</h3>
-                <h6>Montclair State University</h6>
-                <blockquote>
-                  <strong>GPA:</strong>3.5<br />
-                  <strong>Activities:</strong>Computer Club President, HawHack
-                  Student Director
-                </blockquote>
-              </div>
-            </div>
 
             <div class="timeline-item">
               <div class="timeline-img"></div>
               <div class="timeline-content js--fadeInRight">
                 <div class="date">Sep 23' - Present</div>
-                <h3>Volunteer Front-End Developer</h3>
+                <h5>Volunteer Front-End Developer</h5>
                 <h6>Therapi</h6>
                 <blockquote>
                   Work on a team to implement responsive and intuitive user
@@ -157,11 +152,26 @@
               </div>
             </div>
 
+            <!-- Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content js--fadeInLeft">
+                <div class="date">Dec 2023</div>
+                <h5>B.S. Computer Science</h5>
+                <h6>Montclair State University</h6>
+                <blockquote>
+                  <strong>GPA:</strong>3.5<br />
+                  <strong>Activities:</strong>Computer Club President, HawHack
+                  Student Director
+                </blockquote>
+              </div>
+            </div>
+
             <div class="timeline-item">
               <div class="timeline-img"></div>
               <div class="timeline-content js--fadeInLeft">
                 <div class="date">Jun 22' - Dec 23'</div>
-                <h3>Computer Club President</h3>
+                <h5>Computer Club President</h5>
                 <h6>Montclair State University</h6>
                 <blockquote>
                   Planned programming events for 150+ members and spearheaded
@@ -176,7 +186,7 @@
               <div class="timeline-img"></div>
               <div class="timeline-content js--fadeInRight">
                 <div class="date">Jun 22' - Dec 23'</div>
-                <h3>Director & Web Developer</h3>
+                <h5>Director & Web Developer</h5>
                 <h6>HawkHack - Montclair State University</h6>
                 <blockquote>
                   Successfully orchestrated a 24-hour hackathon by leading a
@@ -194,7 +204,7 @@
               <div class="timeline-img"></div>
               <div class="timeline-content js--fadeInLeft">
                 <div class="date">May 23' - Aug 23'</div>
-                <h3>ECRT Software Engineer Intern</h3>
+                <h5>ECRT Software Engineer Intern</h5>
                 <h6>Zebra Technologies</h6>
                 <blockquote>
                   I developed a Python GUI app utilizing Pyshark for Android
@@ -212,7 +222,7 @@
               <div class="timeline-img"></div>
               <div class="timeline-content js--fadeInRight">
                 <div class="date">Sep 22' - May 23'</div>
-                <h3>Research Assistant</h3>
+                <h5>Research Assistant</h5>
                 <h6>
                   NASA New Jersey Space Grant Consortium - Rutgers University
                 </h6>
@@ -231,7 +241,7 @@
               <div class="timeline-img"></div>
               <div class="timeline-content js--fadeInLeft">
                 <div class="date">Jun 22' - Aug 22'</div>
-                <h3>Software Engineer Intern</h3>
+                <h5>Software Engineer Intern</h5>
                 <h6>ISC Industries INC.</h6>
                 <blockquote>
                   Used Python to craft scripts enhancing data analysis and
@@ -256,15 +266,19 @@
           <div class="card">
             <div class="box">
               <i class="fas fa-paint-brush"></i>
-              <div class="Stext">POKE - Travel Hub <br><strong style="font-size: 18px; color: #ac5fdb;"> React.js | Python Flask | MongoDB</strong></div>
+              <div class="Stext">
+                POKE - Travel Hub <br />
+                <strong style="font-size: 18px">
+                  React.js | Python Flask | MongoDB</strong
+                >
+              </div>
               <p>
                 Built a comprehensive travel information platform using React.js
                 for the frontend, and a Python Flask backend powered by MongoDB.
                 The platform seamlessly integrates custom search functionality
                 to retrieve data from the database, offers real-time flight
                 tracking capabilities by accessing various APIs, and provides a
-                user-friendly public transportation system that leverages
-                location-based data retrieval from APIs
+                location-based data for easier travel.
               </p>
               <a href="https://about-poke.netlify.app/">View</a>
             </div>
@@ -273,7 +287,12 @@
           <div class="card">
             <div class="box">
               <i class="fas fa-paint-brush"></i>
-              <div class="Stext">Workout Buddy<br><strong style="font-size: 18px; color: #ac5fdb;"> React.js | Node.js | MongoDB</strong></div>
+              <div class="Stext">
+                Workout Buddy <br />
+                <strong style="font-size: 18px">
+                  React.js | Node.js | MongoDB</strong
+                >
+              </div>
               <p>
                 Developed a full-stack application using MongoDB, Express,
                 React, Node.js for user authentication and authorization. This
@@ -285,27 +304,14 @@
               <a href="https://github.com/Ewynman/Workout-Buddy">View</a>
             </div>
           </div>
-          <!-- Project -->
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-paint-brush"></i>
-              <div class="Stext">MSU Computer Club Website <br><strong style="font-size: 18px; color: #ac5fdb;"> HTML | CSS | JavaScript</strong></div>
-              <p>
-                Developed a dynamic multipage website utilizing HTML5, CSS,
-                JavaScript, and jQuery to effectively showcase club information,
-                including general details, meeting schedules, and board member
-                profiles. Implemented responsive design to optimize the
-                website's accessibility on various devices through various CSS
-                techniques
-              </p>
-              <a href="https://msucomputerclub.netlify.app/">View</a>
-            </div>
-          </div>
           <!-- Project  -->
           <div class="card">
             <div class="box">
               <i class="fa fa-car" aria-hidden="true"></i>
-              <div class="Stext">MSU ShuttleBus <br><strong style="font-size: 18px; color: #ac5fdb;"> PHP | HTML | MySQL</strong></div>
+              <div class="Stext">
+                MSU ShuttleBus <br />
+                <strong style="font-size: 18px"> PHP | HTML | MySQL</strong>
+              </div>
               <p>
                 In a team of six, we created a full-stack application using
                 HTML, PHP, JavaScript, CSS, and MySQL. The application allowed
@@ -313,17 +319,59 @@
                 real-time using the Google Maps JavaScript API. It featured user
                 accounts stored in a MySQL database. The application also
                 provided functionality for drivers to update their location and
-                route announcements, while admins could add new drivers and
-                routes.
+                route announcements.
               </p>
               <a href="https://github.com/Ewynman/shuttlebus">View</a>
+            </div>
+          </div>
+          <!-- Project -->
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-paint-brush"></i>
+              <div class="Stext">
+                KSI Fan Council <br />
+                <strong style="font-size: 18px">
+                  HTML | CSS | JavaScript | BootStrap</strong
+                >
+              </div>
+              <p>
+                Created a website for the KSI Fan Council to share the
+                achivements of British star KSI using HTML, CSS, and JavaScript
+                for the frontend and BootStrap for the styling. The website is
+                responsive and easy to navigate with a clean design
+              </p>
+              <a href="https://ksi-council.netlify.app/">View</a>
+            </div>
+          </div>
+          <!-- Project -->
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-paint-brush"></i>
+              <div class="Stext">
+                MSU Computer Club Website <br />
+                <strong style="font-size: 18px">
+                  HTML | CSS | JavaScript</strong
+                >
+              </div>
+              <p>
+                Developed a dynamic multipage website utilizing HTML5, CSS,
+                JavaScript, and jQuery to effectively showcase club information,
+                including general details, meeting schedules, and board member
+                profiles. Implemented responsive design to optimize the
+                website's accessibility on various devices through various CSS
+                techniques.
+              </p>
+              <a href="https://msucomputerclub.netlify.app/">View</a>
             </div>
           </div>
           <!-- Project  -->
           <div class="card">
             <div class="box">
               <i class="fa fa-gift" aria-hidden="true"></i>
-              <div class="Stext">T&J Apprel <br><strong style="font-size: 18px; color: #ac5fdb;"> PHP | HTML | MySQL</strong></div>
+              <div class="Stext">
+                T&J Apprel <br />
+                <strong style="font-size: 18px"> PHP | HTML | MySQL</strong>
+              </div>
               <p>
                 Ddeveloped an E-commerce website to sell Tom & jerry merchandise
                 using HTML, CSS, PHP, JavaScript, and a MySQL database. Created
@@ -339,14 +387,58 @@
           <div class="card">
             <div class="box">
               <i class="fa fa-gift" aria-hidden="true"></i>
-              <div class="Stext">Personal Protfilio <br><strong style="font-size: 18px; color: #ac5fdb;"> HTML | CSS | JavaScript</strong></div>
+              <div class="Stext">
+                Personal Protfilio <br />
+                <strong style="font-size: 18px">
+                  HTML | CSS | JavaScript</strong
+                >
+              </div>
               <p>
-                Ddeveloped this perosnal website to showcase my skills and experience 
-                over the years. USes HTML, CSS, and JS to create a responsive website
-                that is easy to navigate and visually appealing while highlighting my 
-                skills and experience.
+                Developed this perosnal website to showcase my skills and
+                experience over the years. USes HTML, CSS, and JS to create a
+                responsive website that is easy to navigate and visually
+                appealing while highlighting my skills and experience.
               </p>
-              <a href="https://github.com/Ewynman/T-JApprel">View</a>
+              <a href="https://www.meeteddie.tech/">View</a>
+            </div>
+          </div>
+          <!-- Project  -->
+          <div class="card">
+            <div class="box">
+              <i class="fa fa-gift" aria-hidden="true"></i>
+              <div class="Stext">
+                Mets Quiz Game <br />
+                <strong style="font-size: 18px">
+                  HTML | PHP | JavaScript</strong
+                >
+              </div>
+              <p>
+                Using PHP and JavaScript, I developed a quiz game that tests the
+                knowledge of Mets fans. The game is a multiple-choice quiz that
+                asks the user a series of questions and scores them based on the
+                answers in the MySQL database and then gives them a score at the
+                end.
+              </p>
+              <a href="https://github.com/Ewynman/mets-quiz-game">View</a>
+            </div>
+          </div>
+          <!-- Project  -->
+          <div class="card">
+            <div class="box">
+              <i class="fa fa-gift" aria-hidden="true"></i>
+              <div class="Stext">
+                Positive Quotes <br />
+                <strong style="font-size: 18px">
+                  HTML | CSS | JavaScript</strong
+                >
+              </div>
+              <p>
+                Ddeveloped a simple website that displays a random positive
+                quote to a user using HTML, CSS, and JavaScript. The JS loops
+                through an array of quotes and displays a random quote to the
+                user.
+              </p>
+              <a href="https://positivitequotes.netlify.app/">View</a>
             </div>
           </div>
           <!-- End -->
@@ -361,36 +453,36 @@
           <div class="column right">
             <div class="bars">
               <div class="info">
-                <span>Java</span>
+                <span>Java | Python</span>
                 <span>100%</span>
               </div>
               <div class="line html"></div>
             </div>
             <div class="bars">
               <div class="info">
-                <span>Python</span>
-                <span>90%</span>
+                <span>JavaScript | TypeScript</span>
+                <span>95%</span>
               </div>
               <div class="line css"></div>
             </div>
             <div class="bars">
               <div class="info">
-                <span>JavaScript | React | Node</span>
-                <span>80%</span>
+                <span> React.js | Node.js | Next.js</span>
+                <span>90%</span>
               </div>
               <div class="line js"></div>
             </div>
             <div class="bars">
               <div class="info">
                 <span>HTML | CSS | PHP</span>
-                <span>70%</span>
+                <span>85%</span>
               </div>
               <div class="line php"></div>
             </div>
             <div class="bars">
               <div class="info">
                 <span>MySQL | NoSQL | SQL</span>
-                <span>50%</span>
+                <span>80%</span>
               </div>
               <div class="line mysql"></div>
             </div>
@@ -443,5 +535,36 @@
       });
     </script>
     <script src="./index.js"></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
