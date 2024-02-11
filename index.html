@@ -1,569 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-
-    <!-- Other Imports -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/Skills.css" />
+    <!--Font Awesome CDN-->
     <script
       src="https://kit.fontawesome.com/3263ba6030.js"
       crossorigin="anonymous"
-      -
     ></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--  CSS & Bootstrap -->
-    <link rel="stylesheet" href="./style.css" />
+    <!--Import Rubik Font-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
     />
-
-    <title>Edward Wynman</title>
+    <link rel="icon" href="./Files/Imgs/pfp.jpg" />
+    <title>Hi, Im Eddie!</title>
   </head>
-
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Edward Wynman</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#timeline">Work Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Files/Edward-Wynman-Resume.pdf"
-                >Resume</a
-              >
-            </li>
-          </ul>
+  <body class="p-4 justify-content-center">
+    <div class="container">
+      <span
+        ><a
+          href="./Files/Edward-Wynman-Resume.pdf"
+          target="_blank"
+          class="link underline"
+          >resume</a
+        ></span
+      >
+      <br />
+      <span
+        ><a
+          href="mailto:edward.wynman@gmail.com"
+          target="_blank"
+          class="link underline"
+          >contact me</a
+        ></span
+      >
+      <br />
+      <div class="experience_card"></div>
+      <div class="container heading pt-4">
+        <h2 class="main-head">Web & Mobile Dev</h2>
+        <div>
+          <i class="fas fa-map-marker-alt" style="color: #a14444"></i>
+          <span class="ml-2">Bogota, NJ</span>
         </div>
+        <p class="subheading mt-2">
+          Volunteer Full-Stack Developer AT
+          <a
+            href="https://www.linkedin.com/company/therapime/"
+            style="color: #fff"
+            target="_blank"
+            class="link underline"
+            >Therapi</a
+          >. Recently Graduated From
+          <a
+            href="https://www.montclair.edu/"
+            style="color: #a14444"
+            target="_blank"
+            class="link underline"
+            >MSU</a
+          >, where I studied Computer Science and Data Science.
+        </p>
       </div>
-    </nav>
-
-    <section class="home" id="home">
-      <div class="max-width">
-        <div class="home-content">
-          <div class="container heading pt-4">
-            <h1 class="main-head">Web & Mobile Dev</h1>
-            <div>
-              <i class="fas fa-map-marker-alt" style="color: #a14444"></i>
-              <span class="ml-2">Bogota, NJ</span>
-            </div>
-            <p class="subheading mt-2">
-              <!--ECRT Software Engineer Intern at
-              <a
-                href="https://www.zebra.com/us/en.html/"
-                style="color: #fff"
-                target="_blank"
-                class="link underline"
-                >Zebra Technologies</a
-              >.-->
-              Recently Graduated from
-              <a
-                href="https://www.montclair.edu/"
-                style="color: #a14444"
-                target="_blank"
-                class="link underline"
-                >MSU</a
-              >, where I studied Computer Science.
-            </p>
-          </div>
-          <div class="container">
-            <div class="social-icons">
-              <a
-                href="https://www.linkedin.com/in/edward-wynman/"
-                target="_blank"
-                class="link mr-3"
-                ><i class="fab fa-linkedin"></i>&nbsp LinkedIn</a
-              >
-              <a href="#" target="_blank" class="link mr-3"
-                ><i class="fab fa-twitter"></i>&nbsp Twitter</a
-              >
-              <a
-                href="https://github.com/Ewynman"
-                target="_blank"
-                class="link mr-3"
-                ><i class="fab fa-github"></i>&nbsp Github</a
-              >
-              <a href="tel:2019687412" target="_blank" class="link mr-3">
-                <i class="fas fa-phone"></i>
-                +1 (201)-968-7412
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="timeline" id="timeline" style="background-color: #1e2029">
-      <div class="max-width">
-        <h2 class="title">M Y &nbsp; E X P E R I E N C E S</h2>
-        <section class="timeline" style="background-color: #1e2029">
-          <div class="container">
-            <!-- Item 1 -->
-
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInRight">
-                <div class="date">Sep 23' - Present</div>
-                <h5>Volunteer Front-End Developer</h5>
-                <h6>Therapi</h6>
-                <blockquote>
-                  Work on a team to implement responsive and intuitive user
-                  interfaces using Next.js for an enhanced user experience
-                  including homepages, login pages, and more Leverage MongoDB
-                  and Nest.js to build a robust, high-performance, and secure
-                  backend for seamless data management and user data security
-                </blockquote>
-              </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInLeft">
-                <div class="date">Dec 2023</div>
-                <h5>B.S. Computer Science</h5>
-                <h6>Montclair State University</h6>
-                <blockquote>
-                  <strong>GPA:</strong>3.5<br />
-                  <strong>Activities:</strong>Computer Club President, HawHack
-                  Student Director
-                </blockquote>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInLeft">
-                <div class="date">Jun 22' - Dec 23'</div>
-                <h5>Computer Club President</h5>
-                <h6>Montclair State University</h6>
-                <blockquote>
-                  Planned programming events for 150+ members and spearheaded
-                  all meetings and tech workshops, including Making Twitter Bots
-                  with the Twitter API with Python, Making Pong with Python, How
-                  to Develop & Deploy website, and many more.
-                </blockquote>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInRight">
-                <div class="date">Jun 22' - Dec 23'</div>
-                <h5>Director & Web Developer</h5>
-                <h6>HawkHack - Montclair State University</h6>
-                <blockquote>
-                  Successfully orchestrated a 24-hour hackathon by leading a
-                  cross-functional team. Spearheaded the development of the
-                  hackathon's website, overseeing product design, and ensuring
-                  seamless functionality. Engaged with educational institutions
-                  and industry professionals for participation. Designed
-                  visually captivating flyers to promote the event and leveraged
-                  social media platforms to maximize event visibility
-                </blockquote>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInLeft">
-                <div class="date">May 23' - Aug 23'</div>
-                <h5>ECRT Software Engineer Intern</h5>
-                <h6>Zebra Technologies</h6>
-                <blockquote>
-                  I developed a Python GUI app utilizing Pyshark for Android
-                  Wi-Fi and voice call troubleshooting. Debug time decreased
-                  from 1 hour to 10 minutes, with data sorting, filtering, and
-                  Excel report generation. Also, a Java app with HashMaps
-                  swiftly analyzes logs, reducing debugging to seconds.
-                  Additionally, a Python script automates Bluetooth capture file
-                  parsing, enhancing Frontlines decoder deployment
-                </blockquote>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInRight">
-                <div class="date">Sep 22' - May 23'</div>
-                <h5>Research Assistant</h5>
-                <h6>
-                  NASA New Jersey Space Grant Consortium - Rutgers University
-                </h6>
-                <blockquote>
-                  Utilized the USGS API, employing Python's requests for HTTP
-                  interactions and JSON for data encoding/decoding. Automated
-                  download for diverse datasets, handling options, direct URLs,
-                  and waiting. Facilitated browsing hyperspectral image library,
-                  analyzing pixel spectra, assigning to classes, and executing
-                  PCA and spectral angle mapping for automatic classification.
-                </blockquote>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInLeft">
-                <div class="date">Jun 22' - Aug 22'</div>
-                <h5>Software Engineer Intern</h5>
-                <h6>ISC Industries INC.</h6>
-                <blockquote>
-                  Used Python to craft scripts enhancing data analysis and
-                  movement in the company's database, reducing turnaround times.
-                  Automated file and directory transfers with Python, ensuring
-                  swift updates for database additions. Utilized SQL for query
-                  design and execution via Python scripts, streamlining data
-                  storage and retrieval for heightened customer satisfaction.
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-    
-    <section class="services" id="projects">
-      <div class="max-width">
-        <h2 class="title">M Y &nbsp; P R O J E C T S</h2>
-        <div class="serv-content">
-          <!-- Project  -->
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-paint-brush"></i>
-              <div class="Stext">
-                POKE - Travel Hub <br />
-                <strong style="font-size: 18px">
-                  React.js | Python Flask | MongoDB</strong
-                >
-              </div>
-              <p>
-                Built a comprehensive travel information platform using React.js
-                for the frontend, and a Python Flask backend powered by MongoDB.
-                The platform seamlessly integrates custom search functionality
-                to retrieve data from the database, offers real-time flight
-                tracking capabilities by accessing various APIs, and provides a
-                location-based data for easier travel.
-              </p>
-              <a href="https://about-poke.netlify.app/">View</a>
-            </div>
-          </div>
-          <!-- Project -->
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-paint-brush"></i>
-              <div class="Stext">
-                Workout Buddy <br />
-                <strong style="font-size: 18px">
-                  React.js | Node.js | MongoDB</strong
-                >
-              </div>
-              <p>
-                Developed a full-stack application using MongoDB, Express,
-                React, Node.js for user authentication and authorization. This
-                project involved implementing secure password hashing, JSON Web
-                Tokens for user authentication, and protected routes for
-                authorized users. Allows users to create an account to log and
-                track their workouts with date and timestamps.
-              </p>
-              <a href="https://github.com/Ewynman/Workout-Buddy">View</a>
-            </div>
-          </div>
-          <!-- Project  -->
-          <div class="card">
-            <div class="box">
-              <i class="fa fa-car" aria-hidden="true"></i>
-              <div class="Stext">
-                MSU ShuttleBus <br />
-                <strong style="font-size: 18px"> PHP | HTML | MySQL</strong>
-              </div>
-              <p>
-                In a team of six, we created a full-stack application using
-                HTML, PHP, JavaScript, CSS, and MySQL. The application allowed
-                students to track the location of their school shuttle in
-                real-time using the Google Maps JavaScript API. It featured user
-                accounts stored in a MySQL database. The application also
-                provided functionality for drivers to update their location and
-                route announcements.
-              </p>
-              <a href="https://github.com/Ewynman/shuttlebus">View</a>
-            </div>
-          </div>
-          <!-- Project -->
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-paint-brush"></i>
-              <div class="Stext">
-                KSI Fan Council <br />
-                <strong style="font-size: 18px">
-                  HTML | CSS | JavaScript | BootStrap</strong
-                >
-              </div>
-              <p>
-                Created a website for the KSI Fan Council to share the
-                achivements of British star KSI using HTML, CSS, and JavaScript
-                for the frontend and BootStrap for the styling. The website is
-                responsive and easy to navigate with a clean design
-              </p>
-              <a href="https://ksi-council.netlify.app/">View</a>
-            </div>
-          </div>
-          <!-- Project -->
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-paint-brush"></i>
-              <div class="Stext">
-                MSU Computer Club Website <br />
-                <strong style="font-size: 18px">
-                  HTML | CSS | JavaScript</strong
-                >
-              </div>
-              <p>
-                Developed a dynamic multipage website utilizing HTML5, CSS,
-                JavaScript, and jQuery to effectively showcase club information,
-                including general details, meeting schedules, and board member
-                profiles. Implemented responsive design to optimize the
-                website's accessibility on various devices through various CSS
-                techniques.
-              </p>
-              <a href="https://msucomputerclub.netlify.app/">View</a>
-            </div>
-          </div>
-          <!-- Project  -->
-          <div class="card">
-            <div class="box">
-              <i class="fa fa-gift" aria-hidden="true"></i>
-              <div class="Stext">
-                T&J Apprel <br />
-                <strong style="font-size: 18px"> PHP | HTML | MySQL</strong>
-              </div>
-              <p>
-                Ddeveloped an E-commerce website to sell Tom & jerry merchandise
-                using HTML, CSS, PHP, JavaScript, and a MySQL database. Created
-                four user groups where customers can view and buy orders and
-                view all past orders, sellers can post new items to sell for
-                their shop, Employees can add new sellers and users as well as
-                manage products, Admins can manage all products and all users
-              </p>
-              <a href="https://github.com/Ewynman/T-JApprel">View</a>
-            </div>
-          </div>
-          <!-- Project  -->
-          <div class="card">
-            <div class="box">
-              <i class="fa fa-gift" aria-hidden="true"></i>
-              <div class="Stext">
-                Personal Protfilio <br />
-                <strong style="font-size: 18px">
-                  HTML | CSS | JavaScript</strong
-                >
-              </div>
-              <p>
-                Developed this perosnal website to showcase my skills and
-                experience over the years. USes HTML, CSS, and JS to create a
-                responsive website that is easy to navigate and visually
-                appealing while highlighting my skills and experience.
-              </p>
-              <a href="https://www.meeteddie.tech/">View</a>
-            </div>
-          </div>
-          <!-- Project  -->
-          <div class="card">
-            <div class="box">
-              <i class="fa fa-gift" aria-hidden="true"></i>
-              <div class="Stext">
-                Mets Quiz Game <br />
-                <strong style="font-size: 18px">
-                  HTML | PHP | JavaScript</strong
-                >
-              </div>
-              <p>
-                Using PHP and JavaScript, I developed a quiz game that tests the
-                knowledge of Mets fans. The game is a multiple-choice quiz that
-                asks the user a series of questions and scores them based on the
-                answers in the MySQL database and then gives them a score at the
-                end.
-              </p>
-              <a href="https://github.com/Ewynman/mets-quiz-game">View</a>
-            </div>
-          </div>
-          <!-- Project  -->
-          <div class="card">
-            <div class="box">
-              <i class="fa fa-gift" aria-hidden="true"></i>
-              <div class="Stext">
-                Positive Quotes <br />
-                <strong style="font-size: 18px">
-                  HTML | CSS | JavaScript</strong
-                >
-              </div>
-              <p>
-                Ddeveloped a simple website that displays a random positive
-                quote to a user using HTML, CSS, and JavaScript. The JS loops
-                through an array of quotes and displays a random quote to the
-                user.
-              </p>
-              <a href="https://positivitequotes.netlify.app/">View</a>
-            </div>
-          </div>
-          <!-- End -->
-        </div>
-      </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <div class="max-width">
-        <h2 class="title">S K I L L S</h2>
-        <div class="skills-content">
-          <div class="column right">
-            <div class="bars">
-              <div class="info">
-                <span>Java | Python</span>
-                <span>100%</span>
-              </div>
-              <div class="line html"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>JavaScript | TypeScript</span>
-                <span>95%</span>
-              </div>
-              <div class="line css"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span> React.js | Node.js | Next.js</span>
-                <span>90%</span>
-              </div>
-              <div class="line js"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>HTML | CSS | PHP</span>
-                <span>85%</span>
-              </div>
-              <div class="line php"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>MySQL | NoSQL | SQL</span>
-                <span>80%</span>
-              </div>
-              <div class="line mysql"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="content-footer">
-      <section class="footer-text">
-        Say hi to me on these social networks:
-      </section>
-      <ul class="social">
-        <li>
-          <a href="https://github.com/Ewynman">
-            <i class="fa fa-github" aria-hidden="true"></i> GitHub
+      <div class="container">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/edward-wynman/"
+            target="_blank"
+            class="link mr-3"
+            ><i class="fab fa-linkedin"></i>&nbsp LinkedIn</a
+          >
+          <a href="#" target="_blank" class="link mr-3"
+            ><i class="fab fa-twitter"></i>&nbsp Twitter</a
+          >
+          <a href="https://github.com/Ewynman" target="_blank" class="link mr-3"
+            ><i class="fab fa-github"></i>&nbsp Github</a
+          >
+          <a href="tel:2019687412" target="_blank" class="link mr-3">
+            <i class="fas fa-phone"></i>
+            +1 (201)-968-7412
           </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/edward-wynman/">
-            <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
-          </a>
-        </li>
-      </ul>
-    </footer>
+        </div>
+      </div>
+      <div class="container cex">
+        <h3 class="mt-4 section-title">W O R K &nbsp E X P E R I E N C E</h3>
+        <div class="experience_card mt-4">
+          <img
+            src="./Files/Imgs/Therapi-logo.jpg"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">
+              Volunteer Full-Stack Developer @ Therapi
+            </h4>
+            <div class="date datendisc">September 2023 — Present</div>
+            <br />
+            <div class="experience_desc datendisc">
+              Working on a team that is developing an early stage Sass startup
+              to develop an online therapy platform in Next.js
+            </div>
+          </div>
+        </div>
 
-    <script>
-      const navLinks = document.querySelectorAll(".navbar-nav a.nav-link");
+        <div class="experience_card mt-4">
+          <img
+            src="./Files/Imgs/Zebra.jpg"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">
+              ECRT Software Engineer Intern @ Zebra Technologies
+            </h4>
+            <div class="date datendisc">May 2023 — August 2023</div>
+            <br />
+            <div class="experience_desc datendisc">
+              Working as part of the ECRT team to automate Android Network &
+              Bluetooh Connectivity debugging
+            </div>
+          </div>
+        </div>
+        <div class="experience_card mt-4">
+          <img
+            src="./Files/Imgs/Nasa-Logo.jpg"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">
+              Research Intern @ NASA Space Grant Consorium
+            </h4>
+            <div class="date datendisc">September 2022 — May 2023</div>
+            <br />
+            <div class="experience_desc datendisc">
+              Worked on the Development of A Processing Workflow for
+              Hyperspectral Images
+            </div>
+          </div>
+        </div>
+        <div class="experience_card">
+          <img
+            src="/Files/Imgs/ISC-Logo.jfif"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">
+              Software Engineer Intern @ ISC Industries
+            </h4>
+            <div class="date datendisc">June 2022 — August 2022</div>
+            <br />
+            <div class="experience_desc datendisc">
+              I was part of the Catalog team and developed in-house software for
+              analyzing, moving, and adding images to the company database.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class="section-title">S K I L L S</h3>
+        <div class="skills">
+          <p class="skl"></p>
+          <p class="skl sklLine">_________</p>
+          <div class="htmlProg ProgWidth">
+            <div class="p">
+              <p>HTML</p>
+              <p>95%</p>
+            </div>
+            <div class="pp">
+              <div class="skillDiv">
+                <span class="skillBar htmlBar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="cssProg ProgWidth">
+            <div class="p">
+              <p>CSS</p>
+              <p>95%</p>
+            </div>
+            <div class="pp">
+              <div class="skillDiv">
+                <span class="skillBar cssBar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="jsProg ProgWidth">
+            <div class="p">
+              <p>JavaScript/TypeScript</p>
+              <p>90%</p>
+            </div>
+            <div class="pp">
+              <div class="skillDiv">
+                <span class="skillBar jsBar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="javaProg ProgWidth">
+            <div class="p">
+              <p>Java</p>
+              <p>90%</p>
+            </div>
+            <div class="pp">
+              <div class="skillDiv">
+                <span class="skillBar javaBar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="c/c++Prog ProgWidth">
+            <div class="p">
+              <p>React.JS/Next.JS</p>
+              <p>85%</p>
+            </div>
+            <div class="pp">
+              <div class="skillDiv">
+                <span class="skillBar ccpBar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="reactProg ProgWidth">
+            <div class="p">
+              <p>SQL</p>
+              <p>85%</p>
+            </div>
+            <div class="pp">
+              <div class="skillDiv">
+                <span class="skillBar reactBar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="nodeProg ProgWidth">
+            <div class="p">
+              <p>Node.js</p>
+              <p>75%</p>
+            </div>
+            <div class="pp">
+              <div class="skillDiv">
+                <span class="skillBar nodeBar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="sqlProg ProgWidth">
+            <div class="p">
+              <p>PHP</p>
+              <p>75%</p>
+            </div>
+            <div class="pp">
+              <div class="skillDiv">
+                <span class="skillBar sqlBar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class="section-title">E X P E R I E N C E S</h3>
 
-      navLinks.forEach((link) => {
-        link.addEventListener("click", function (event) {
-          const targetHref = this.getAttribute("href");
+        <div class="experience_card mt-4">
+          <img
+            src="/Files/Imgs/CSClub-Logo.jpg"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">President of Computer Club @ MSU</h4>
+            <div class="date datendisc">January 2022 — December 2023</div>
+            <br />
+            <div class="experience_desc datendisc">
+              Gave frictionless tech workshops, streamlined meetings, and had
+              fun.
+            </div>
+          </div>
+        </div>
 
-          // Check if the link points to a file (e.g., PDF)
-          const isFileLink = targetHref.endsWith(".pdf"); // Adjust the file extension as needed
+        <div class="experience_card mt-4">
+          <img
+            src="/Files/Imgs/hawkhack.png"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">Hackathon Organizer @ HawkHack</h4>
+            <div class="date datendisc">May 2022 - December 2023</div>
+            <br />
+            <div class="experience_desc datendisc">
+              Lead developer for the hackathon's website, managing product
+              design, reaching out to schools and professionals in the industry,
+              creating flyers, and posting about the event on social media.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class="section-title">P R O J E C T S</h3>
+        <div class="experience_card mt-4">
+          <img
+            src="./Files/Imgs/TripTracker.png"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">POKE Travel Hub</h4>
+            <div class="date datendisc">September 2023 — December 2023</div>
+            <br />
+            <div class="experience_desc datendisc">
+              Developer a travel information platform that seamlessly integrates
+              custom search functionality to retrieve data from the database,
+              offers real-time flight tracking capabilities by accessing various
+              APIs, and provides location-based data for easier travel.
+            </div>
+          </div>
+        </div>
+        <div class="experience_card mt-4">
+          <img
+            src="/Files/Imgs/shuttlebusIcon.png"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">ShuttleBus</h4>
+            <div class="date datendisc">January 2023 — May 2023</div>
+            <br />
+            <div class="experience_desc datendisc">
+              Developed a CRUDE based Shuttle Mangement System in a group of 6
+              using HTML, CSS, PHP, and JavaScript with a MySQL Backend.
+            </div>
+          </div>
+        </div>
+        <div class="experience_card mt-4">
+          <img
+            src="./Files/Imgs/T&J-Logo.jpg"
+            style="margin-right: 10px"
+            loading="lazy"
+            width="40"
+            alt=""
+            class="image-2"
+          />
+          <div>
+            <h4 class="experience-title">T&J Apparel</h4>
+            <div class="date datendisc">September 2022 — December 2022</div>
+            <br />
+            <div class="experience_desc datendisc">
+              Created a CRUDE E-commerce website to sell various Tom & Jerry
+              Merch
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience_card mt-4">
+        <img
+          src="./Files/Imgs/WB-Logo.png"
+          style="margin-right: 10px"
+          loading="lazy"
+          width="40"
+          alt=""
+          class="image-2"
+        />
+        <div>
+          <h4 class="experience-title">Workout Buddy</h4>
+          <div class="date datendisc">December 2022</div>
+          <br />
+          <div class="experience_desc datendisc">
+            Developed a MERN workout application to track a user's specific
+            workouts and progress.
+          </div>
+        </div>
+      </div>
+    </div>
 
-          if (isFileLink) {
-            // If it's a file link, navigate to the file directly
-            return; // The default behavior of the link will handle the file download
-          }
+    <div class="container text-center">
+      <a href="mailto:edward.wynman@gmail.com" class="link"
+        >edward.wynman@gmail.com ✌️</a
+      >
+    </div>
 
-          event.preventDefault();
-
-          const targetSection = document.querySelector(targetHref);
-
-          if (targetSection) {
-            targetSection.scrollIntoView({ behavior: "smooth" });
-          }
-        });
-      });
-    </script>
-    <script src="./index.js"></script>
-    <!-- Bootstrap JS -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
   </body>
