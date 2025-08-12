@@ -9,6 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.jpeg" type="image/jpeg" />
+      </head>
       <body suppressHydrationWarning>
         <Header />
         <main>{children}</main>

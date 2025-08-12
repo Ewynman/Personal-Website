@@ -3,10 +3,27 @@
     "id": 1,
     "logo": "/imgs/Geico-logo.jpg",
     "company": "Geico",
+    "title": "Software Engineer II",
+    "dates": "May 2024 – Present",
+    "highlight": "Developed telematics features for internal app team",
+    "tags": ["Flutter", "Swift", "Azure", "Python", "Mobile Development", "iOS", "Snowflake", "SQL", "Xcode", "Unit Testing", "Testflight", "Firebase"],
+    "details": [
+      "Release internal SDK builds through Firebase and TestFlight, manages all QA feedback cycles, and coordinates deliveries to internal app team",
+      "Redesign and refactor critical SDK modules including trip validation and other logic to improve modularity, testability, and parity with Android.",
+      "Enhanced reverse geocoding reliability by redesigning timeout handling, implementing coordinate validation, and adding fallback logic to prevent crashes; improved SDK resilience in edge cases and added comprehensive unit tests for error paths.",
+      "Diagnose and resolve production bugs using debuggers, stack traces, and memory analysis tools; fixed memory leaks, resolved threading bugs, and improved async code stability across critical flows",
+      "Collaborate with cross-functional teams to design and implement new features, ensuring alignment with product goals and user needs; actively participate in code reviews to maintain high code quality and share knowledge.",
+      "Develop and maintain internal tools to automate data analysis and reporting with Python and SnowFlake, improving team productivity and efficiency; streamlining data analytics from taking hours to minutes."
+    ]
+  },
+  {
+    "id": 2,
+    "logo": "/imgs/Geico-logo.jpg",
+    "company": "Geico",
     "title": "Software Engineer I",
     "dates": "May 2024 – Present",
-    "highlight": "Developed telematics features for iDS app",
-    "tags": ["Flutter", "Swift", "Azure"],
+    "highlight": "Developed telematics features for iOS app",
+    "tags": ["Flutter", "Swift", "Azure", "Dart", "Mobile Development", "Riverpod", "iOS", "Web Development", "Restful APIs","Xcode", "Unit Testing", "Testflight", "Firebase"],
     "details": [
       "Redesigned distracted-driving detection logic on iOS using biometric state and screen APIs, reducing false positives by 90% within the first 60 days on the job.",
       "Upgraded iOS SDK data collection frequency from 1 Hz to 9 Hz for improved telematics-model accuracy; implemented backend-configured feature flags for dynamic sampling-rate control to enable safe rollouts.",
@@ -16,13 +33,13 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "logo": "/imgs/Therapi-logo.jpg",
     "company": "Therapi",
     "title": "Volunteer Full-Stack Developer",
     "dates": "Sep 2023 – May 2024",
     "highlight": "Built web platform for online therapy services",
-    "tags": ["Next.js", "TypeScript", "CSS"],
+    "tags": ["Next.js", "TypeScript", "CSS", "Tailwind CSS", "Nest.js", "MongoDB", "Prisma", "React", "Full-Stack Development"],
     "details": [
       "Built responsive front-end interfaces using React, Next.js, and TypeScript, enhancing user engagement and accessibility through clean UI architecture and Tailwind CSS design.",
       "Developed secure backend services with Nest.js and MongoDB, optimizing data flow and retrieval for fast, real-time appointment and user interactions.",
@@ -31,13 +48,13 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "logo": "/imgs/Zebra-logo.jpg",
     "company": "Zebra Technologies",
     "title": "ECRT Software Engineer Intern",
     "dates": "May 2023 – Aug 2023",
     "highlight": "Automated network diagnostics on Android",
-    "tags": ["Java", "Android", "Bluetooth"],
+    "tags": ["Java", "Android", "Bluetooth", "Python", "PyShark", "Data Analysis", "Debugging", "HTML"],
     "details": [
       "Created a Python GUI tool leveraging PyShark for Android Wi-Fi and voice-call debugging—reducing debug time from 1 hour to 10 minutes, with built-in data sorting, filtering, and Excel report export.",
       "Developed an efficient Java application using HashMaps to analyze logs and codebases in seconds, pinpoint errors, and generate HTML reports, slashing manual debugging time dramatically.",
@@ -46,13 +63,13 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "logo": "/imgs/Nasa-Logo.jpg",
     "company": "NASA Space Grant Consorium",
     "title": "Research Intern",
     "dates": "Sep 2022 – May 2023",
     "highlight": "Processing Workflow for Hyperspectral Images",
-    "tags": ["Python", "UI", "Data Science"],
+    "tags": ["Python", "UI", "Data Science", "Data Analysis", "Research and Development"],
     "details": [
       "Leveraged Python requests and JSON encoding/decoding to optimize dataset search and download via the USGS API, enhancing data retrieval efficiency.",
       "Engineered an automated system to batch-download multiple hyperspectral datasets—handling download options, URL resolution, and wait-time management.",
@@ -61,13 +78,13 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "logo": "/imgs/ISC-Logo.jpg",
     "company": "ISC Industries",
     "title": "Software Engineer Intern",
     "dates": "Sep 2022 – May 2023",
     "highlight": "Automated SQL Databases with python",
-    "tags": ["Python", "Databases", "SQL"],
+    "tags": ["Python", "Databases", "SQL", "Data Analysis", "Data Engineering", "Data Pipelines", "SQL Lite"],
     "details": [
       "Wrote Python scripts to analyze and move image data within the company’s catalog database, improving data organization workflows.",
       "Automated file and directory transfers for newly added catalog items, reducing manual overhead and errors in data ingestion.",
