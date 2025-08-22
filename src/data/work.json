@@ -5,7 +5,7 @@
     "company": "Geico",
     "title": "Software Engineer II",
     "dates": "May 2024 – Present",
-    "highlight": "Developed telematics features for internal app team",
+    "highlight": "Developed telematics features for DriveEasy Platform for more than 2.5 million users",
     "tags": ["Flutter", "Swift", "Azure", "Python", "Mobile Development", "iOS", "Snowflake", "SQL", "Xcode", "Unit Testing", "Testflight", "Firebase"],
     "details": [
       "Release internal SDK builds through Firebase and TestFlight, manages all QA feedback cycles, and coordinates deliveries to internal app team",
@@ -22,7 +22,7 @@
     "company": "Geico",
     "title": "Software Engineer I",
     "dates": "May 2024 – Present",
-    "highlight": "Developed telematics features for iOS app",
+    "highlight": "Developed Commercial Telematics Flutter Platform from 0 to 1",
     "tags": ["Flutter", "Swift", "Azure", "Dart", "Mobile Development", "Riverpod", "iOS", "Web Development", "Restful APIs","Xcode", "Unit Testing", "Testflight", "Firebase"],
     "details": [
       "Redesigned distracted-driving detection logic on iOS using biometric state and screen APIs, reducing false positives by 90% within the first 60 days on the job.",

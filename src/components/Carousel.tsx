@@ -1,8 +1,8 @@
 // src/components/Carousel.tsx
 "use client";
 
-import React, { useState } from 'react';
-import Modal from "./Modal";  // Import the Modal component
+import React, { useEffect, useState } from 'react';
+import Modal from "./Modal"; 
 
 interface Item {
   id: number;
@@ -30,16 +30,32 @@ export default function Carousel({ items, sectionId, sectionTitle }: CarouselPro
   // Modal state
   const [selected, setSelected] = useState<Item | null>(null);
 
+  // Mobile detection for rendering all items for horizontal scroll
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const update = () => setIsMobile(window.innerWidth <= 768);
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
+
   const filtered = activeTag
     ? items.filter(i => i.tags.includes(activeTag))
     : items;
 
-  const prev = () => setCurrentIndex(i => Math.max(0, i - 1));
-  const next = () => setCurrentIndex(i => Math.min(filtered.length - 3, i + 1));
+  const prev = () => setCurrentIndex((index: number) => Math.max(0, index - 1));
+  const next = () => setCurrentIndex((index: number) => Math.min(filtered.length - 3, index + 1));
+
+  const visibleItems = isMobile
+    ? filtered
+    : filtered.slice(currentIndex, currentIndex + 3);
 
   return (
     <section id={sectionId} className="container">
       <h2 className="section-title">{sectionTitle}</h2>
+      {sectionId === 'work' && (
+        <p className="section-subtitle">Click a card to view more details</p>
+      )}
 
       {/* Tag filters (unchanged) */}
       <div className="tags">
@@ -66,19 +82,25 @@ export default function Carousel({ items, sectionId, sectionTitle }: CarouselPro
         </button>
 
         <div className="card-container">
-          {filtered.slice(currentIndex, currentIndex + 3).map(item => (
-            <div key={item.id} className="card">
+          {visibleItems.map(item => (
+            <div
+              key={item.id}
+              className="card"
+              onClick={() => setSelected(item)}
+              style={{ cursor: 'pointer' }}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e: React.KeyboardEvent<HTMLDivElement>) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setSelected(item);
+                }
+              }}
+            >
               <img src={item.logo} alt={`${item.company} logo`} />
               <h3>{item.company}</h3>
 
-              {/* Clicking the title opens the modal */}
-              <h4
-                className="card-title"
-                onClick={() => setSelected(item)}
-                style={{ cursor: "pointer" }}  // give visual hint
-              >
-                {item.title}
-              </h4>
+              <h4 className="card-title">{item.title}</h4>
 
               <div className="dates">{item.dates}</div>
               <p>{item.highlight}</p>
