@@ -1,75 +1,83 @@
 [
   {
     "id": 1,
-    "logo": "/imgs/Poke-logo.png",
-    "company": "POKE Travel Hub",
-    "title": "POKE Travel Hub",
-    "dates": "Sep 2023 – Dec 2023",
-    "highlight": "All-in-one travel resource center with real-time data",
-    "tags": [
-      "Expo",
-      "Node.js",
-      "React",
-      "React Native",
-      "TypeScript",
-      "Python",
-      "Flask"
-    ],
-    "url": "https://github.com/yourusername/poke-travel-hub",
+    "logo": "/imgs/Spot-logo.png",
+    "company": "Spot",
+    "title": "Founder & Lead Developer",
+    "dates": "Jul 2025 – Present",
+    "highlight": "iOS + web platform for social discovery",
+    "tags": ["Swift", "SwiftUI", "UIKit", "Next.js", "Firebase", "Azure", "CI/CD", "Crashlytics"],
+    "url": "https://github.com/Ewynman/",
     "details": [
-      "Built an Expo-based mobile and web interface that aggregates weather, baggage limits, carry-on rules, and airport delay data for any US airport.",
-      "Implemented real-time weather forecasts using the OpenWeatherMap API and geolocation data for the user’s current position.",
-      "Developed a flight-delay lookup feature: users can search by airport code to retrieve live delay statistics via AviationStack API.",
-      "Created an airline information module that scrapes and caches baggage and carry-on policy details, enabling quick lookups.",
-      "Authored a Python Flask backend with RESTful endpoints for all data requests, handling caching, rate-limiting, and API key management.",
-      "Structured the frontend in React/React Native with TypeScript for strong typing, and used Node.js for build scripts and asset bundling."
+      "Architected and developed an iOS app using SwiftUI/UIKit with a Next.js companion web interface, enabling seamless cross-platform user experiences.",
+      "Designed scalable backend with Firebase Authentication, real-time database, and Azure services for fast, reliable data management.",
+      "Integrated Crashlytics and a custom logging framework to track performance, debug issues, and guide iterative improvements.",
+      "Built automated CI/CD pipelines for builds, tests, and deployments, reducing release cycles from days to hours across iOS and web.",
+      "Led design and product decisions, ensuring a clean, modern UX while setting up the foundation for future feature expansion."
     ]
   },
   {
     "id": 2,
-    "logo": "/imgs/shuttlebusIcon.png",
-    "company": "ShuttleBus",
-    "title": "ShuttleBus",
-    "dates": "Jan 2023 – May 2023",
-    "highlight": "Campus shuttle tracking system",
-    "tags": ["HTML", "PHP", "MySQL", "Google Maps API"],
-    "url": "https://github.com/Ewynman/shuttlebus",
+    "logo": "/imgs/Poke-logo.png",
+    "company": "POKE Travel Hub",
+    "title": "POKE Travel Hub",
+    "dates": "Sep 2023 – Dec 2023",
+    "highlight": "All-in-one mobile/web travel resource center",
+    "tags": ["Expo", "React", "React Native", "TypeScript", "Node.js", "Python", "Flask"],
+    "url": "https://github.com/yourusername/poke-travel-hub",
     "details": [
-      "Integrated the Google Maps JavaScript API to display real-time shuttle locations, routes, and stop markers on an interactive campus map.",
-      "Built PHP/MySQL back-end services to manage shuttle schedules, update vehicle positions, and serve location data via RESTful endpoints.",
-      "Developed a responsive front-end UI that lets users search for shuttle stops, view ETAs, and receive live updates as vehicles move around campus.",
-      "Implemented AJAX polling to fetch location data every 5 seconds, minimizing latency and ensuring smooth, near real-time position updates."
+      "Built an Expo-based cross-platform app consolidating weather, baggage limits, and airport delay data into a single travel resource.",
+      "Integrated OpenWeatherMap API and geolocation to deliver real-time local forecasts tailored to user position.",
+      "Implemented live airport delay search with AviationStack API, giving travelers real-time flight statistics by airport code.",
+      "Scraped and cached airline baggage policies for instant lookups, reducing repetitive API calls and improving app responsiveness.",
+      "Developed Python Flask backend with caching, rate-limiting, and secure API key management to handle heavy traffic efficiently."
     ]
   },
   {
     "id": 3,
-    "logo": "/imgs/T&J-Logo.jpg",
-    "company": "T&J Apparel",
-    "title": "T&J Apparel",
-    "dates": "Sep 2022 – Dec 2022",
-    "highlight": "CRUDE e-commerce platform with multi-role support",
-    "tags": ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
+    "logo": "/imgs/shuttlebusIcon.png",
+    "company": "ShuttleBus",
+    "title": "ShuttleBus",
+    "dates": "Jan 2023 – May 2023",
+    "highlight": "Real-time campus shuttle tracking system",
+    "tags": ["PHP", "MySQL", "Google Maps API", "HTML", "JavaScript"],
+    "url": "https://github.com/Ewynman/shuttlebus",
     "details": [
-      "Built a full-stack online e-commerce website in a 2-person team using PHP, HTML, CSS, JavaScript, and MySQL.",
-      "Implemented CRUD operations for Users, Sellers, and Admins, enabling browsing, purchasing, order history, product posting, and sales dashboards.",
-      "Developed secure authentication and role-based access control so that Sellers could manage their own listings and view sales metrics, while Admins could search, modify, and delete any user or product record.",
-      "Enhanced the UX with dynamic product pages, client-side form validation, and responsive design for seamless shopping across devices."
+      "Integrated Google Maps API to visualize shuttle routes and live vehicle positions with interactive stop markers.",
+      "Built PHP/MySQL backend services to manage schedules, track vehicles, and serve JSON endpoints for the front-end.",
+      "Developed a responsive UI where students could search shuttle stops, view ETAs, and follow buses in real time.",
+      "Optimized location updates with AJAX polling every 5 seconds, minimizing latency and ensuring smooth map transitions."
     ]
   },
   {
     "id": 4,
+    "logo": "/imgs/T&J-Logo.jpg",
+    "company": "T&J Apparel",
+    "title": "T&J Apparel",
+    "dates": "Sep 2022 – Dec 2022",
+    "highlight": "E-commerce platform with role-based access",
+    "tags": ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
+    "details": [
+      "Built a full-stack e-commerce platform in a 2-person team supporting Users, Sellers, and Admins with role-specific permissions.",
+      "Implemented secure authentication and role-based access control, enabling sellers to manage their inventory and admins to oversee all records.",
+      "Developed features for product browsing, purchasing, order history, and seller dashboards to improve usability.",
+      "Enhanced UX with responsive layouts, client-side validation, and dynamic product pages for seamless shopping experiences."
+    ]
+  },
+  {
+    "id": 5,
     "logo": "/imgs/WB-Logo.png",
     "company": "Workout Buddy",
     "title": "Workout Buddy",
     "dates": "Dec 2022 – Jan 2023",
-    "highlight": "MERN app for tracking workouts with secure auth",
+    "highlight": "MERN stack app for secure workout tracking",
     "tags": ["MongoDB", "Express", "React", "Node.js", "JWT"],
     "url": "https://github.com/Ewynman/workout-buddy",
     "details": [
-      "Developed a full-stack MERN application (MongoDB, Express, React, Node.js) for user authentication and workout tracking.",
-      "Implemented secure password hashing and JSON Web Tokens for authentication, with protected routes ensuring data privacy.",
-      "Built CRUD interfaces allowing users to log workouts with date and timestamp, view past sessions, and edit entries.",
-      "Integrated file export capabilities so users can download their workout history as CSV for personal analytics."
+      "Developed a full-stack MERN application for secure workout logging, authentication, and user dashboards.",
+      "Implemented password hashing and JSON Web Tokens for secure login, with protected routes safeguarding user data.",
+      "Built CRUD features for logging workouts, reviewing history, and editing past sessions with timestamp accuracy.",
+      "Added CSV export functionality, allowing users to analyze their workout history outside the app."
     ]
   }
 ]

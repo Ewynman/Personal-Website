@@ -4,16 +4,15 @@
     "logo": "/imgs/Geico-logo.jpg",
     "company": "Geico",
     "title": "Software Engineer II",
-    "dates": "May 2024 – Present",
-    "highlight": "Developed telematics features for DriveEasy Platform for more than 2.5 million users",
-    "tags": ["Flutter", "Swift", "Azure", "Python", "Mobile Development", "iOS", "Snowflake", "SQL", "Xcode", "Unit Testing", "Testflight", "Firebase"],
+    "dates": "Jul 2024 – Present",
+    "highlight": "Lead iOS SDK improvements powering DriveEasy for 2.5M+ users",
+    "tags": ["Swift", "iOS", "Xcode", "Unit Testing", "TestFlight", "Firebase", "Azure", "Python", "Snowflake", "SQL", "Mobile Development"],
     "details": [
-      "Release internal SDK builds through Firebase and TestFlight, manages all QA feedback cycles, and coordinates deliveries to internal app team",
-      "Redesign and refactor critical SDK modules including trip validation and other logic to improve modularity, testability, and parity with Android.",
-      "Enhanced reverse geocoding reliability by redesigning timeout handling, implementing coordinate validation, and adding fallback logic to prevent crashes; improved SDK resilience in edge cases and added comprehensive unit tests for error paths.",
-      "Diagnose and resolve production bugs using debuggers, stack traces, and memory analysis tools; fixed memory leaks, resolved threading bugs, and improved async code stability across critical flows",
-      "Collaborate with cross-functional teams to design and implement new features, ensuring alignment with product goals and user needs; actively participate in code reviews to maintain high code quality and share knowledge.",
-      "Develop and maintain internal tools to automate data analysis and reporting with Python and SnowFlake, improving team productivity and efficiency; streamlining data analytics from taking hours to minutes."
+      "Refactored and modularized trip validation and core SDK modules, ensuring cross-platform parity with Android, higher unit-test coverage, and improved reliability across async/threading flows.",
+      "Eliminated 10k+ monthly geocoding failures by implementing retry logic, coordinate validation, and timeout handling—improving trip accuracy, preventing null UI states, and ensuring backend integrity.",
+      "Reduced QA cycle time from 1 week to 3 days by streamlining internal SDK releases, coordinating Firebase/TestFlight builds, and proactively shipping hotfixes before production issues arose.",
+      "Diagnosed and fixed memory leaks and concurrency bugs using debuggers and memory analysis tools, significantly improving app stability in critical trip flows.",
+      "Built Python + Snowflake tools to automate SDK data analysis and reporting, cutting analytics turnaround from hours to minutes and boosting team efficiency."
     ]
   },
   {
@@ -21,15 +20,15 @@
     "logo": "/imgs/Geico-logo.jpg",
     "company": "Geico",
     "title": "Software Engineer I",
-    "dates": "May 2024 – Present",
-    "highlight": "Developed Commercial Telematics Flutter Platform from 0 to 1",
-    "tags": ["Flutter", "Swift", "Azure", "Dart", "Mobile Development", "Riverpod", "iOS", "Web Development", "Restful APIs","Xcode", "Unit Testing", "Testflight", "Firebase"],
+    "dates": "May 2024 – Jul 2024",
+    "highlight": "Shipped first commercial telematics features from 0 → 1",
+    "tags": ["Flutter", "Dart", "Swift", "iOS", "Riverpod", "Mobile Development", "Azure", "Xcode", "Unit Testing", "TestFlight", "Firebase"],
     "details": [
-      "Redesigned distracted-driving detection logic on iOS using biometric state and screen APIs, reducing false positives by 90% within the first 60 days on the job.",
-      "Upgraded iOS SDK data collection frequency from 1 Hz to 9 Hz for improved telematics-model accuracy; implemented backend-configured feature flags for dynamic sampling-rate control to enable safe rollouts.",
-      "Built commercial telematics platform features on the Flutter-based Commercial UX team, integrating Radar for custom map styling and MapLibre for interactive route overlays and vehicle markers.",
-      "Designed and implemented UI components for vehicle and trip detail pages to support real-time and historical data visualization, enabling fleet managers to review past routes and statuses.",
-      "Integrated and extended APIs with Riverpod to fetch policy and vehicle status information, ensuring up-to-date displays of commercial vehicle states across the platform."
+      "Redesigned distracted-driving detection logic using iOS APIs, reducing false positives by 90% and eliminating weekly customer complaints.",
+      "Upgraded iOS SDK data collection frequency from 1 Hz to 9 Hz to align with data-science models, rolling out safely with backend-configured feature flags.",
+      "Delivered commercial telematics fleet platform with real-time maps and trip overlays—cutting refresh latency from 10s to 5s and driving adoption across 1k+ commercial accounts.",
+      "Implemented UI components for trip and vehicle detail pages in Flutter, supporting both live and historical trip visualization.",
+      "Integrated policy/vehicle APIs via Riverpod for real-time fleet state management, ensuring accurate and up-to-date dashboards."
     ]
   },
   {
