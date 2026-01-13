@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import Modal from "./Modal"; 
 
 interface Item {
@@ -27,6 +28,9 @@ export default function Carousel({ items, sectionId, sectionTitle }: CarouselPro
   const sectionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
+    const currentRef = sectionRef.current;
+    if (!currentRef) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -36,14 +40,10 @@ export default function Carousel({ items, sectionId, sectionTitle }: CarouselPro
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    observer.observe(currentRef);
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      observer.unobserve(currentRef);
     };
   }, []);
 
@@ -81,7 +81,13 @@ export default function Carousel({ items, sectionId, sectionTitle }: CarouselPro
               }}
             >
               <div className="card-header">
-                <img src={item.logo} alt={`${item.company} logo`} className="card-logo" />
+                <Image 
+                  src={item.logo} 
+                  alt={`${item.company} logo`} 
+                  className="card-logo"
+                  width={50}
+                  height={50}
+                />
                 <div className="card-badge">{item.dates}</div>
               </div>
               

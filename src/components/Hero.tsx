@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-badge">iOS & Full-Stack Developer</div>
         <h1 className="hero-title">
-          Hi, I'm <span className="gradient-text">Eddie Wynman</span>
+          Hi, I&apos;m <span className="gradient-text">Eddie Wynman</span>
         </h1>
         <p className="hero-subtitle">
           Building mobile apps and web experiences with Swift, React, and modern tools

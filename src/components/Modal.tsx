@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 interface Item {
   id: number;
@@ -30,7 +31,12 @@ export default function Modal({ item, onClose }: ModalProps) {
           ×
         </button>
         <div className="modal-header">
-          <img src={item.logo} alt={`${item.company} logo`} />
+          <Image 
+            src={item.logo} 
+            alt={`${item.company} logo`}
+            width={60}
+            height={60}
+          />
           <div>
             <h2>{item.title}</h2>
             <h3>{item.company}</h3>
