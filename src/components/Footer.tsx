@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 export default function Footer() {
   return (
     <footer className="site-footer">
@@ -6,14 +5,23 @@ export default function Footer() {
         <p>
           <a href="mailto:edward.wynman@gmail.com">edward.wynman@gmail.com</a>
         </p>
-        <p>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <a href="/Files/Edward-Wynman-Resume.pdf" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
+          <span>•</span>
           <a href="https://www.linkedin.com/in/edward-wynman/" target="_blank" rel="noopener noreferrer">
             LinkedIn
-          </a>{" • "}
+          </a>
+          <span>•</span>
           <a href="https://github.com/Ewynman" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-        </p>
+          <span>•</span>
+          <a href="https://twitter.com/eddiebytes" target="_blank" rel="noopener noreferrer">
+            Twitter
+          </a>
+        </div>
         <p>© {new Date().getFullYear()} Eddie Wynman</p>
       </div>
     </footer>

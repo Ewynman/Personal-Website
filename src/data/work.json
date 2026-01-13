@@ -3,32 +3,28 @@
     "id": 1,
     "logo": "/imgs/Geico-logo.jpg",
     "company": "Geico",
-    "title": "Software Engineer II",
-    "dates": "Jul 2024 – Present",
-    "highlight": "Lead iOS SDK improvements powering DriveEasy for 2.5M+ users",
-    "tags": ["Swift", "iOS", "Xcode", "Unit Testing", "TestFlight", "Firebase", "Azure", "Python", "Snowflake", "SQL", "Mobile Development"],
+    "title": "iOS Developer II",
+    "dates": "Jul 2025 – Present",
+    "highlight": "Refactored network layer with unified logging and retry logic",
+    "tags": ["Swift", "iOS", "SwiftUI", "Xcode", "TestFlight", "Firebase", "Azure"],
     "details": [
-      "Refactored and modularized trip validation and core SDK modules, ensuring cross-platform parity with Android, higher unit-test coverage, and improved reliability across async/threading flows.",
-      "Eliminated 10k+ monthly geocoding failures by implementing retry logic, coordinate validation, and timeout handling—improving trip accuracy, preventing null UI states, and ensuring backend integrity.",
-      "Reduced QA cycle time from 1 week to 3 days by streamlining internal SDK releases, coordinating Firebase/TestFlight builds, and proactively shipping hotfixes before production issues arose.",
-      "Diagnosed and fixed memory leaks and concurrency bugs using debuggers and memory analysis tools, significantly improving app stability in critical trip flows.",
-      "Built Python + Snowflake tools to automate SDK data analysis and reporting, cutting analytics turnaround from hours to minutes and boosting team efficiency."
+      "Refactored the network layer by introducing a dedicated network manager with unified logging, automatic retries, and token-refresh handling for invalid credentials.",
+      "Reduced 10k+ monthly reverse-geocoding failures to near zero by moving geocoding into a dedicated manager with coordinate validation, timeout handling, and threaded retry logic.",
+      "Refactored the trip simulation app to support multiple concurrent trips, added real-time event playback with robust UI error handling, and redesigned the interface for clarity and usability."
     ]
   },
   {
     "id": 2,
     "logo": "/imgs/Geico-logo.jpg",
     "company": "Geico",
-    "title": "Software Engineer I",
-    "dates": "May 2024 – Jul 2024",
-    "highlight": "Shipped first commercial telematics features from 0 → 1",
-    "tags": ["Flutter", "Dart", "Swift", "iOS", "Riverpod", "Mobile Development", "Azure", "Xcode", "Unit Testing", "TestFlight", "Firebase"],
+    "title": "iOS Developer I",
+    "dates": "May 2024 – Jul 2025",
+    "highlight": "Increased iOS trip-data sampling from 1 Hz to 9 Hz",
+    "tags": ["Swift", "iOS", "SwiftUI", "Xcode", "TestFlight", "Firebase", "Azure"],
     "details": [
-      "Redesigned distracted-driving detection logic using iOS APIs, reducing false positives by 90% and eliminating weekly customer complaints.",
-      "Upgraded iOS SDK data collection frequency from 1 Hz to 9 Hz to align with data-science models, rolling out safely with backend-configured feature flags.",
-      "Delivered commercial telematics fleet platform with real-time maps and trip overlays—cutting refresh latency from 10s to 5s and driving adoption across 1k+ commercial accounts.",
-      "Implemented UI components for trip and vehicle detail pages in Flutter, supporting both live and historical trip visualization.",
-      "Integrated policy/vehicle APIs via Riverpod for real-time fleet state management, ensuring accurate and up-to-date dashboards."
+      "Increased iOS trip-data sampling from 1 Hz to 9 Hz using native sensor APIs and a redesigned time-boxed processing pipeline.",
+      "Reduced distracted-driving false positives by 90% by implementing an alert-driven architecture using OS delegate callbacks.",
+      "Refactored audio-route handling by introducing a dedicated audio route manager and integrating it with our pub-sub event model."
     ]
   },
   {
@@ -64,7 +60,7 @@
   {
     "id": 5,
     "logo": "/imgs/Nasa-Logo.jpg",
-    "company": "NASA Space Grant Consorium",
+    "company": "NASA Space Grant Consortium",
     "title": "Research Intern",
     "dates": "Sep 2022 – May 2023",
     "highlight": "Processing Workflow for Hyperspectral Images",
@@ -72,7 +68,7 @@
     "details": [
       "Leveraged Python requests and JSON encoding/decoding to optimize dataset search and download via the USGS API, enhancing data retrieval efficiency.",
       "Engineered an automated system to batch-download multiple hyperspectral datasets—handling download options, URL resolution, and wait-time management.",
-      "Developed a browsing feature for a hyperspectral image library, enabling pixel-level spectral analysis and improving researchers’ data-insight workflows.",
+      "Developed a browsing feature for a hyperspectral image library, enabling pixel-level spectral analysis and improving researchers' data-insight workflows.",
       "Created and presented a poster on this workflow at CCSCNE 2023 (Ithaca College), communicating methods and results to peers and faculty."
     ]
   },
@@ -85,7 +81,7 @@
     "highlight": "Automated SQL Databases with python",
     "tags": ["Python", "Databases", "SQL", "Data Analysis", "Data Engineering", "Data Pipelines", "SQL Lite"],
     "details": [
-      "Wrote Python scripts to analyze and move image data within the company’s catalog database, improving data organization workflows.",
+      "Wrote Python scripts to analyze and move image data within the company's catalog database, improving data organization workflows.",
       "Automated file and directory transfers for newly added catalog items, reducing manual overhead and errors in data ingestion.",
       "Collaborated with the SQL team to craft optimized queries for storing and retrieving company data, then integrated those queries into Python tools for customer-facing reports.",
       "Streamlined the end-to-end data pipeline— from ingestion through analysis—enabling faster catalog updates and more reliable access to item metadata."
