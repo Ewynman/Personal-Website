@@ -2,22 +2,10 @@
 
 import React from "react";
 
-interface Skill {
-  name: string;
-  level: number;
-}
-
-const skills: Skill[] = [
-  { name: "Swift", level: 95 },
-  { name: "SwiftUI", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "React/Next.js", level: 90 },
-  { name: "Flutter", level: 90 },
-  { name: "Python", level: 85 },
-  { name: "JavaScript", level: 85 },
-  { name: "Java", level: 85 },
-  { name: "Firebase", level: 85 },
-  { name: "Azure", level: 80 },
+const groups = [
+  { label: "Mobile", items: ["Swift", "SwiftUI", "Flutter"] },
+  { label: "Web", items: ["TypeScript", "React", "Next.js", "JavaScript"] },
+  { label: "Backend & tools", items: ["Python", "Java", "Firebase", "Azure"] },
 ];
 
 export default function Skills() {
@@ -26,22 +14,14 @@ export default function Skills() {
       <div className="container">
         <h2 className="section-title">Skills</h2>
         <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <div 
-              key={skill.name} 
-              className="skill-card"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="skill-header">
-                <span className="skill-name">{skill.name}</span>
-                <span className="skill-level">{skill.level}%</span>
-              </div>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  style={{ width: `${skill.level}%` }}
-                />
-              </div>
+          {groups.map((group) => (
+            <div key={group.label} className="skills-group">
+              <h3 className="skills-group-label">{group.label}</h3>
+              <ul className="skills-list">
+                {group.items.map((name) => (
+                  <li key={name}>{name}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

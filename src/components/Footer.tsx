@@ -5,19 +5,19 @@ export default function Footer() {
         <p>
           <a href="mailto:edward.wynman@gmail.com">edward.wynman@gmail.com</a>
         </p>
-        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div className="footer-links">
           <a href="/Files/Edward-Wynman-Resume.pdf" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
-          <span>•</span>
+          <span aria-hidden="true">·</span>
           <a href="https://www.linkedin.com/in/edward-wynman/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <span>•</span>
+          <span aria-hidden="true">·</span>
           <a href="https://github.com/Ewynman" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-          <span>•</span>
+          <span aria-hidden="true">·</span>
           <a href="https://twitter.com/eddiebytes" target="_blank" rel="noopener noreferrer">
             Twitter
           </a>

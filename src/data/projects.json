@@ -7,7 +7,7 @@
     "dates": "Jul 2025 – Present",
     "highlight": "Production-ready iOS app with real-time content delivery",
     "tags": ["Swift", "SwiftUI", "UIKit", "Firebase", "Azure", "CI/CD"],
-    "url": "https://github.com/Ewynman/spot",
+    "url": "https://spotapp.online",
     "details": [
       "Built a production-ready iOS application using SwiftUI + UIKit with real-time content delivery, media handling, async caching, and push notifications.",
       "Architected scalable backend infrastructure using Firebase Auth, Firestore, Realtime Database, Cloud Storage, and Azure services.",

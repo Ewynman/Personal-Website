@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 
 interface Item {
@@ -21,13 +22,45 @@ interface ModalProps {
 }
 
 export default function Modal({ item, onClose }: ModalProps) {
-  return (
-    <div className="modal-backdrop" onClick={onClose}>
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
+  useEffect(() => {
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+    contentRef.current?.focus();
+    return () => {
+      previouslyFocused?.focus();
+    };
+  }, []);
+
+  const modalNode = (
+    <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <div
+        ref={contentRef}
         className="modal-content"
-        onClick={e => e.stopPropagation() /* prevent closing when clicking inside */}
+        tabIndex={-1}
+        onClick={(e) => e.stopPropagation()}
       >
-        <button className="modal-close" onClick={onClose} aria-label="Close">
+        <button type="button" className="modal-close" onClick={onClose} aria-label="Close modal">
           ×
         </button>
         <div className="modal-header">
@@ -38,7 +71,7 @@ export default function Modal({ item, onClose }: ModalProps) {
             height={60}
           />
           <div>
-            <h2>{item.title}</h2>
+            <h2 id="modal-title">{item.title}</h2>
             <h3>{item.company}</h3>
           </div>
         </div>
@@ -61,7 +94,7 @@ export default function Modal({ item, onClose }: ModalProps) {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn"
+              className="btn btn-primary"
             >
               View Project
             </a>
@@ -71,4 +104,10 @@ export default function Modal({ item, onClose }: ModalProps) {
       </div>
     </div>
   );
+
+  if (!mounted) return null;
+  if (typeof document !== "undefined") {
+    return createPortal(modalNode, document.body);
+  }
+  return null;
 }

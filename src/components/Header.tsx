@@ -22,10 +22,10 @@ export default function Header() {
   ];
 
   const socialLinks = [
-    { href: "/Files/Edward-Wynman-Resume.pdf", label: "Resume", icon: "📄", external: true },
-    { href: "https://www.linkedin.com/in/edward-wynman/", label: "LinkedIn", icon: "💼", external: true },
-    { href: "https://github.com/Ewynman", label: "GitHub", icon: "🔗", external: true },
-    { href: "https://twitter.com/eddiebytes", label: "Twitter", icon: "🐦", external: true },
+    { href: "/Files/Edward-Wynman-Resume.pdf", label: "Resume", external: true },
+    { href: "https://www.linkedin.com/in/edward-wynman/", label: "LinkedIn", external: true },
+    { href: "https://github.com/Ewynman", label: "GitHub", external: true },
+    { href: "https://twitter.com/eddiebytes", label: "Twitter", external: true },
   ];
 
   return (
@@ -35,12 +35,14 @@ export default function Header() {
           Eddie Wynman
         </a>
 
-        <button 
-          className="menu-toggle" 
-          aria-label="Toggle menu" 
-          onClick={() => setOpen(o => !o)}
+        <button
+          type="button"
+          className="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded={open}
+          onClick={() => setOpen((o) => !o)}
         >
-          <span className={open ? "open" : ""}>☰</span>
+          <span className={open ? "open" : ""}>{open ? "✕" : "Menu"}</span>
         </button>
 
         <nav className={`nav ${open ? "open" : ""}`}>
@@ -59,7 +61,7 @@ export default function Header() {
           </ul>
           
           <div className="social-links">
-            {socialLinks.map(link => (
+            {socialLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -69,7 +71,6 @@ export default function Header() {
                 aria-label={link.label}
                 onClick={() => setOpen(false)}
               >
-                <span className="social-icon">{link.icon}</span>
                 <span className="social-label">{link.label}</span>
               </a>
             ))}
