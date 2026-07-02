@@ -1,31 +1,23 @@
-// src/app/page.tsx
 import Hero from "../components/Hero";
-import Carousel from "../components/Carousel";
+import About from "../components/About";
+import WorkSection from "../components/WorkSection";
+import ProjectSection from "../components/ProjectSection";
 import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import workData from "../data/work.json";
 import projectData from "../data/projects.json";
+import type { ContentItem } from "../types/content";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-
-      {/* Work Experience Carousel */}
-      <Carousel
-        items={workData}
-        sectionId="work"
-        sectionTitle="Work Experience"
-      />
-
-      {/* Projects Carousel */}
-      <Carousel
-        items={projectData}
-        sectionId="projects"
-        sectionTitle="Projects"
-      />
-
+      <About />
+      <WorkSection items={workData as ContentItem[]} />
+      <ProjectSection items={projectData as ContentItem[]} />
       <Skills />
+      <Contact />
       <Footer />
     </>
   );

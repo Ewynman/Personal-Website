@@ -1,23 +1,13 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
-
-interface Item {
-  id: number;
-  logo: string;
-  company: string;
-  title: string;
-  dates: string;
-  highlight: string;
-  tags: string[];
-  details: string[];
-  url?: string;
-}
+import type { ContentItem } from "../types/content";
+import TagList from "./TagList";
 
 interface ModalProps {
-  item: Item;
+  item: ContentItem;
   onClose: () => void;
 }
 
@@ -53,22 +43,34 @@ export default function Modal({ item, onClose }: ModalProps) {
   }, []);
 
   const modalNode = (
-    <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div
+      className="modal-backdrop"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
       <div
         ref={contentRef}
         className="modal-content"
         tabIndex={-1}
         onClick={(e) => e.stopPropagation()}
       >
-        <button type="button" className="modal-close" onClick={onClose} aria-label="Close modal">
+        <button
+          type="button"
+          className="modal-close"
+          onClick={onClose}
+          aria-label="Close"
+        >
           ×
         </button>
+
         <div className="modal-header">
-          <Image 
-            src={item.logo} 
-            alt={`${item.company} logo`}
-            width={60}
-            height={60}
+          <Image
+            src={item.logo}
+            alt=""
+            width={48}
+            height={48}
           />
           <div>
             <h2 id="modal-title">{item.title}</h2>
@@ -77,37 +79,32 @@ export default function Modal({ item, onClose }: ModalProps) {
         </div>
 
         <ul className="modal-details">
-          {item.details.map((d, i) => (
-            <li key={i}>{d}</li>
+          {item.details.map((detail) => (
+            <li key={detail}>{detail}</li>
           ))}
         </ul>
 
-        <div className="modal-tags">
-          {item.tags.map(tag => (
-            <span key={tag} className="tag">{tag}</span>
-          ))}
-        </div>
+        <TagList tags={item.tags} />
 
         <div className="modal-footer">
-          {item.url && (
+          {item.url ? (
             <a
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              View Project
+              View project
             </a>
+          ) : (
+            <span />
           )}
-          <span className="dates">{item.dates}</span>
+          <time className="dates">{item.dates}</time>
         </div>
       </div>
     </div>
   );
 
   if (!mounted) return null;
-  if (typeof document !== "undefined") {
-    return createPortal(modalNode, document.body);
-  }
-  return null;
+  return createPortal(modalNode, document.body);
 }
