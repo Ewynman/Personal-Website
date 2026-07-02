@@ -2,79 +2,78 @@
 
 import { useState, useEffect } from "react";
 
+const navLinks = [
+  { href: "#about", label: "About" },
+  { href: "#work", label: "Work" },
+  { href: "#projects", label: "Projects" },
+  { href: "#skills", label: "Skills" },
+  { href: "#contact", label: "Contact" },
+];
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 12);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { href: "#about", label: "About" },
-    { href: "#work", label: "Work" },
-    { href: "#projects", label: "Projects" },
-    { href: "#skills", label: "Skills" },
-  ];
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
-  const socialLinks = [
-    { href: "/Files/Edward-Wynman-Resume.pdf", label: "Resume", external: true },
-    { href: "https://www.linkedin.com/in/edward-wynman/", label: "LinkedIn", external: true },
-    { href: "https://github.com/Ewynman", label: "GitHub", external: true },
-    { href: "https://twitter.com/eddiebytes", label: "Twitter", external: true },
-  ];
+  const closeMenu = () => setOpen(false);
 
   return (
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
-        <a href="#about" className="logo">
+        <a href="#about" className="logo" onClick={closeMenu}>
           Eddie Wynman
         </a>
 
         <button
           type="button"
           className="menu-toggle"
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          onClick={() => setOpen((o) => !o)}
+          onClick={() => setOpen((prev) => !prev)}
         >
-          <span className={open ? "open" : ""}>{open ? "✕" : "Menu"}</span>
+          <span className={`menu-icon ${open ? "open" : ""}`} aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
         </button>
 
-        <nav className={`nav ${open ? "open" : ""}`}>
+        <div
+          className={`nav-overlay ${open ? "open" : ""}`}
+          onClick={closeMenu}
+          aria-hidden="true"
+        />
+
+        <nav className={`nav ${open ? "open" : ""}`} aria-label="Primary">
           <ul className="nav-list">
-            {navLinks.map(link => (
+            {navLinks.map((link) => (
               <li key={link.href}>
-                <a 
-                  href={link.href} 
-                  onClick={() => setOpen(false)}
-                  className="nav-link"
-                >
+                <a href={link.href} onClick={closeMenu} className="nav-link">
                   {link.label}
                 </a>
               </li>
             ))}
           </ul>
-          
-          <div className="social-links">
-            {socialLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noopener noreferrer" : undefined}
-                className="social-link"
-                aria-label={link.label}
-                onClick={() => setOpen(false)}
-              >
-                <span className="social-label">{link.label}</span>
-              </a>
-            ))}
-          </div>
+
+          <a
+            href="mailto:edward.wynman@gmail.com"
+            className="btn btn-primary nav-cta"
+            onClick={closeMenu}
+          >
+            Get in touch
+          </a>
         </nav>
       </div>
     </header>
